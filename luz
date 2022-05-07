@@ -1,0 +1,8 @@
+st.title("Polarizacion de la luz")
+st.whrite("La polarización es una propiedad de la luz, que describe la geometría interna de una fuente de radiación")
+st.subheader("La luz")
+st.markdown("![Alt Text](https://miro.medium.com/max/640/1*5ROgpofTSL5U0I3oh1iEuA.gif)")
+st.whrite("")
+st.subheader("Luz polarizada:)"
+st.whrite("Luz que vibra en un solo plano, esto se produce gracias a la ayuda de un polarizador")
+st.image()

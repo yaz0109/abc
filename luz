@@ -9,4 +9,5 @@ st.markdown("![Alt Text](https://www.baumer.com/medias/sys_master/images-content
 st.subheader("Polarizador:")
 st.image("https://w7.pngwing.com/pngs/939/208/png-transparent-polarized-light-polarimeter-optical-rotation-density-matrix-bulbs-angle-experiment-light.png")
 st.whrite ("Los polarizdores son materiales que transmiten de forma selectiva las ondas electromagneticas de la luz, restringiendo las ondas a una sola direccion de propagacion bloqueando el resto de planos de polarizacion")
-st.subheader("Aplicaciones:")
+st.button('Aplicaciones'):
+     st.write('Why hello there')

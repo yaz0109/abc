@@ -9,5 +9,13 @@ st.markdown("![Alt Text](https://www.baumer.com/medias/sys_master/images-content
 st.subheader("Polarizador:")
 st.image("https://w7.pngwing.com/pngs/939/208/png-transparent-polarized-light-polarimeter-optical-rotation-density-matrix-bulbs-angle-experiment-light.png")
 st.whrite ("Los polarizdores son materiales que transmiten de forma selectiva las ondas electromagneticas de la luz, restringiendo las ondas a una sola direccion de propagacion bloqueando el resto de planos de polarizacion")
-st.button('Aplicaciones'):
-     st.write('Why hello there')
+st.radio(
+     "Tipo de polarizacion",
+     ('Lineal ', 'Circular', 'Eliptica'))
+
+if genre == 'Lineal':
+     st.write('El vector E traza sobre el plano perpendicular a la direccion de propagacion una linea recta.')
+if genre == 'Circular':
+     st.write('Componentes de E misma magnitud, pero una diferencia de fase, puede verse girando a la izquierda o hacia la derecha.')
+if genre == 'Eliptica':
+     st.write('Componentes de E son diferentes, abarca cualquier diferencia de magnitid de fase de Ex y Ey, es el estado de polarizacion mas general.')

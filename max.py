@@ -15,7 +15,14 @@ def main():
         "Selecciona una opción:",
         ("Opción 1", "Opción 2", "Opción 3")
     )
+    st.title("Botones para la selección de opciones")
 
+    if st.button("Opción 1"):
+        st.write("Has seleccionado la Opción 1")
+    if st.button("Opción 2"):
+        st.write("Has seleccionado la Opción 2")
+    if st.button("Opción 3"):
+        st.write("Has seleccionado la Opción 3")
     if opcion == "Opción 1":
         st.write("Has seleccionado la Opción 1")
     elif opcion == "Opción 2":

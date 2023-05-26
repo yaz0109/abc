@@ -2,9 +2,11 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import math
-import art as pip
-def main():
 
+def main():
+titulo = "Challenging situation"
+print(titulo)
+print("=" * len(titulo)) 
     st.title("Challenging situation")
     st.write("Aquí está tu código Python:")
 if __name__ == "__main__":

@@ -9,8 +9,13 @@ def main():
     st.write("Pipe network design")
     texto_ingresado = st.text_input("Ingrese su texto", "Texto predeterminado")
     st.write("Texto ingresado:", texto_ingresado)
-    st.title("Menú con 3 opciones")
-
+    st.title("Menú:")
+    if st.button("INTRODUCCIÓN"):
+        st.write("INTRODUCCIÓN:")
+    if st.button("PROGRAMA"):
+        st.write("PROGRAMA:")
+    if st.button("FUENTES BIBLIOGRAFICAS"):
+        st.write("FUENTES BIBLIOGRAFICAS")
     opcion = st.sidebar.radio(
         "Selecciona una opción:",
         ("INTRODUCCIÓN", "PROGRAMA", "FUENTES BIBLIOGRAFICAS","AGRADECIMIENTOS")

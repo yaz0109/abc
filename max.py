@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import math
-import art 
+from art import
 def main():
     Tit = "Challenging situation"
     st.title("#"*10, Tit, "#"*10)

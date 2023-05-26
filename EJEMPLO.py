@@ -4,7 +4,7 @@ import pandas as pd
 import math
 
 
-print  str.title("RED DE TUBERÍAS");
+str.title("RED DE TUBERÍAS");
 print()
 print("Aquí, se proporciona un croquis isométrico de la red de tuberías como ayuda visual."
       " Sin embargo, se necesitan algunas especificaciones para estas tuberías y "

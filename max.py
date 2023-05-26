@@ -13,21 +13,20 @@ def main():
 
     opcion = st.sidebar.radio(
         "Selecciona una opción:",
-        ("Opción 1", "Opción 2", "Opción 3")
-    )
-    st.title("Botones para la selección de opciones")
+        ("INTRODUCCIÓN", "PROGRAMA", "FUENTES BIBLIOGRAFICAS","AGRADECIMIENTOS"  )
+    st.title("MENU")
 
-    if st.button("Opción 1"):
-        st.write("Has seleccionado la Opción 1")
-    if st.button("Opción 2"):
-        st.write("Has seleccionado la Opción 2")
-    if st.button("Opción 3"):
-        st.write("Has seleccionado la Opción 3")
-    if opcion == "Opción 1":
-        st.write("Has seleccionado la Opción 1")
-    elif opcion == "Opción 2":
-        st.write("Has seleccionado la Opción 2")
-    elif opcion == "Opción 3":
-        st.write("Has seleccionado la Opción 3")
+    if st.button("INTRODUCCIÓN"):
+        st.write("INTRODUCCIÓN:")
+    if st.button("PROGRAMA"):
+        st.write("PROGRAMA:")
+    if st.button("FUENTES BIBLIOGRAFICAS"):
+        st.write("FUENTES BIBLIOGRAFICAS")
+    if opcion == "INTRODUCCIÓN":
+        st.write("INTRODUCCIÓN:")
+    elif opcion == "PROGRAMA":
+        st.write("PROGRAMA:")
+    elif opcion == "FUENTES BIBLIOGRAFICAS":
+        st.write("FUENTES BIBLIOGRAFICAS:")
 if __name__ == "__main__":
      main()

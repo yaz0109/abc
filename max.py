@@ -14,7 +14,7 @@ def main():
     opcion = st.sidebar.radio(
         "Selecciona una opción:",
         ("INTRODUCCIÓN", "PROGRAMA", "FUENTES BIBLIOGRAFICAS","AGRADECIMIENTOS"  )
- st.title("MENU")
+    st.title("MENU")
 
     if st.button("INTRODUCCIÓN"):
         st.write("INTRODUCCIÓN:")

@@ -13,38 +13,20 @@ def main():
 
     if seleccion == "INTRODUCCIÓN":
         st.subheader("INTRODUCCIÓN")
-
         itr.INTRODUCCIÓN()
 
     elif seleccion == "PROGRAMA":
         st.subheader("PROGRAMA")
 
-        bs.INTRODUCCIÓN()
+        bs.PROGRAMA()
 
     elif seleccion == "FUENTES BIBLIOGRAFICAS":
         st.subheader("FUENTES BIBLIOGRAFICAS")
 
-        bs.FUENTESBIBLIOGRAFICAS()  
+        fb.FUENTESBIBLIOGRAFICAS()  
         
         
-    st.title("Menú:")
-    if st.button("INTRODUCCIÓN"):
-        st.write("INTRODUCCIÓN:")
-    if st.button("PROGRAMA"):
-        st.write("PROGRAMA:")
-    if st.button("FUENTES BIBLIOGRAFICAS"):
-        st.write("FUENTES BIBLIOGRAFICAS")
-    opcion = st.sidebar.radio(
-        "Selecciona una opción:",
-        ("INTRODUCCIÓN", "PROGRAMA", "FUENTES BIBLIOGRAFICAS","AGRADECIMIENTOS")
-    )
-
-    if opcion == "INTRODUCCIÓN":
-        st.write("INTRODUCCIÓN:")
-    elif opcion == "PROGRAMA":
-        st.write("PROGRAMA:")
-    elif opcion == "FUENTES BIBLIOGRAFICAS":
-        st.write("FUENTES BIBLIOGRAFICAS:")
+   
 
 if __name__ == "__main__":
     main()

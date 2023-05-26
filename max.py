@@ -6,6 +6,7 @@ import math
 def main():
 
     st.title("Challenging situation")
-    st.write("Aquí está tu código Python:")
+    st.write("Pipe network stronghold")
+        st.write("Pipe network design")
 if __name__ == "__main__":
     main()

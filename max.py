@@ -1,7 +1,5 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
-import math
 
-mensaje = "Hola, mundo!"
-print(mensaje)
+def main():
+    st.title("Mi Aplicación de Python en Streamlit")
+    st.write("Aquí está tu código Python:")

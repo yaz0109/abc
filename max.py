@@ -8,5 +8,11 @@ def main():
     st.title("Challenging situation")
     st.write("Pipe network stronghold")
     st.write("Pipe network design")
-if __name__ == "__main__":
+texto_ingresado = st.text_input("Ingrese su texto", "Texto predeterminado")
+
+st.write("Texto ingresado:", texto_ingresado)
+    
+    
+    
+    if __name__ == "__main__":
     main()

@@ -5,8 +5,9 @@ import math
 
 def main():
     st.title("Challenging situation")
-    st.write("Pipe network stronghold")
-    st.write("Pipe network design")
+    st.title("Imagen centrada")
+    image_url = "https://i.pinimg.com/564x/a7/db/1c/a7db1c37805f8ddb1a34f70c94f4784e.jpg" 
+    st.image(image_url, use_column_width=True, caption="Imagen centrada")
     
     st.title("Menú:")
     if st.button("INTRODUCCIÓN"):

@@ -2,10 +2,10 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import math
-pip install art 
+
 def main():
-    Tit = "Challenging situation"
-    st.title("#"*10, Tit, "#"*10)
+
+    st.title("Challenging situation")
     st.write("Aquí está tu código Python:")
 if __name__ == "__main__":
     main()

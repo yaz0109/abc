@@ -11,3 +11,4 @@ def main():
     st.write("Texto ingresado:", texto_ingresado)
 
 if __name__ == "__main__":
+     main()

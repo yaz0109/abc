@@ -3,4 +3,5 @@ import numpy as np
 import pandas as pd
 import math
 
-str.title("RED DE TUBERÍAS");
+mensaje = "Hola, mundo!"
+print(mensaje)

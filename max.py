@@ -12,17 +12,17 @@ def main():
 
     if seleccion == "INTRODUCCIÓN":
         st.subheader("INTRODUCCIÓN")
-        st.latex('''x^3 - 6x^2 + 11x -6.1''')
+
         bs.INTRODUCCIÓN()
 
     elif seleccion == "PROGRAMA":
         st.subheader("PROGRAMA")
-        st.latex('''x^3 - 6x^2 + 11x -6.1''')
+
         bs.INTRODUCCIÓN()
 
     elif seleccion == "FUENTES BIBLIOGRAFICAS":
         st.subheader("FUENTES BIBLIOGRAFICAS")
-        st.latex('''x^3 - 6x^2 + 11x -6.1''')
+
         bs.FUENTESBIBLIOGRAFICAS()  
         
         

@@ -15,3 +15,12 @@ def INTRODUCCION():
              "el equipo de proceso instalado, los soportes mecánicos de tubería "
              "plausibles y la seguridad. "
              "Sin embargo, no se determinaron los tamaños de las tuberías.")
+    st.form('my_form_identifier')
+    st.form_submit_button('Submit to me')
+    st.container()
+    st.columns(spec)
+    >>> col1, col2 = st.columns(2)
+    >>> col1.subheader('Columnisation')
+    st.expander('Expander')
+    >>> with st.expander('Expand'):
+    >>>     st.write('Juicy deets')

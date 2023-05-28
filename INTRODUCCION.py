@@ -25,7 +25,11 @@ def INTRODUCCION():
     col2.subheader('Columna 2')
     col2.write('Contenido de la columna 2') 
     
-    st.progress(progress_variable_1_to_100)
+    st.write("¡Hola! Haz clic en el botón para ver los globos.")
+
+    if st.button("Mostrar globos"):
+    st.balloons()
+    
     st.balloons()
     st.snow()
     st.error('Error message')

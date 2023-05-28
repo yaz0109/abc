@@ -20,4 +20,4 @@ def INTRODUCCION():
     col1.subheader('Columna 1')
     col1.write('Contenido de la columna 1')
     col2.subheader('Columna 2')
-    col2.write('Contenido de la columna 2')
+    col2.write('Contenido de la columna 2') 

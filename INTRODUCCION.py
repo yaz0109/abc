@@ -4,6 +4,8 @@ import pandas as pd
 
 def INTRODUCCION():
     st.title("RED DE TUBERÍAS")
+    st.write("Las redes de tuberías son sistemas de tuberías interconectadas que se utilizan para transportar diferentes tipos de fluidos, la construcción y diseño de estos sistemas es muy importante tomando en cuenta el objetivo que esta debe de cumplir, así como las características del fluido a transportar y las especificaciones para garantizar la eficiencia del sistema.")
+   
     st.write("Aquí, se proporciona un croquis isométrico de la red de tuberías como ayuda visual."
              " Sin embargo, se necesitan algunas especificaciones para estas tuberías y "
              "esta es la situación de diseño que debe enfrentar un ingeniero.")

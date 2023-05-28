@@ -21,3 +21,12 @@ def INTRODUCCION():
     col1.write('Contenido de la columna 1')
     col2.subheader('Columna 2')
     col2.write('Contenido de la columna 2') 
+    
+    st.progress(progress_variable_1_to_100)
+    st.balloons()
+    st.snow()
+    st.error('Error message')
+    st.warning('Warning message')
+    st.info('Info message')
+    st.success('Success message')
+    st.exception(e)

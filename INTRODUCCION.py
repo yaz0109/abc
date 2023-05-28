@@ -28,12 +28,7 @@ def INTRODUCCION():
     st.write("¡Hola! Haz clic en el botón para ver los globos.")
 
     if st.button("Mostrar globos"):
-    st.balloons()
-    
-    st.balloons()
-    st.snow()
-    st.error('Error message')
-    st.warning('Warning message')
-    st.info('Info message')
-    st.success('Success message')
-    st.exception(e)
+         st.balloons()
+        
+if __name__ == '__main__':
+    INTRODUCCION()

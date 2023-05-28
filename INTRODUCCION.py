@@ -15,8 +15,9 @@ def INTRODUCCION():
              "el equipo de proceso instalado, los soportes mecánicos de tubería "
              "plausibles y la seguridad. "
              "Sin embargo, no se determinaron los tamaños de las tuberías.")
-        col1, col2 = st.columns(2)
-        col1.subheader('Columna 1')
-        col1.write('Contenido de la columna 1')
-        col2.subheader('Columna 2')
-        col2.write('Contenido de la columna 2')
+
+    col1, col2 = st.columns(2)
+    col1.subheader('Columna 1')
+    col1.write('Contenido de la columna 1')
+    col2.subheader('Columna 2')
+    col2.write('Contenido de la columna 2')

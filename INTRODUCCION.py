@@ -10,8 +10,8 @@ def INTRODUCCION():
    
     st.write("En esta web interactiva se busca determinar ciertos valores de una red de tuberías, a partir de ciertos principios manejados en un curso de mecánica extendido.")
     st.write("Una red de tuberías es un sistema de transporte de fluidos que consta de una serie de tubos interconectados que permiten el flujo de líquidos, gases u otros tipos de fluidos de un punto a otro. Estas redes se utilizan ampliamente en diversas aplicaciones, como el suministro de agua potable, el transporte de petróleo y gas, el sistema de alcantarillado, la distribución de productos químicos, entre otros.")
-    st.write("Se estableció la disposición de la red de tuberías al considerar "
-    st.write("Las red que tenemos en este diseño, consta de material de acero, diámetros ajustables, longitudes y alturas definidas." )
+    st.write("Se estableció la disposición de la red de tuberías al considerar. ")
+    st.write("La red que tenemos en este diseño, consta de material de acero, diámetros ajustables, longitudes y alturas definidas." )
     st.write("El objetivo es que quien entienda y haga uso del sistema, pueda agregar las especificaciones pertinentes, que le atribuirán un diseño de tuberías optimo; todo ello en función del caudal de alimentación desde el nodo A, por ende, las respectivas descargas en nodos J, M, U y Z. Asignando también la energía total por unidad de peso del fluido (agua e 25 a 60 °C), HGL de alimentación ") 
 
     col1, col2 = st.columns(2)

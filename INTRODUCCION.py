@@ -14,7 +14,7 @@ def INTRODUCCION():
     st.write("Se estableció la disposición de la red de tuberías al considerar "
              "el equipo de proceso instalado, los soportes mecánicos de tubería "
              "plausibles y la seguridad. "
-             "Sin embargo, no se determinaron los tamaños de las tuberías.")
+             "Sin embargo, no se determinaron los tamaños de las tuberías.") 
 
     col1, col2 = st.columns(2)
     col1.subheader('Columna 1')

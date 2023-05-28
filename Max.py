@@ -12,7 +12,7 @@ def main():
 
     if seleccion == "INTRODUCCIÓN":
         st.subheader("INTRODUCCIÓN")
-       io.INTRODUCCION()
+        io.INTRODUCCION()
 
     elif seleccion == "PROGRAMA":
         st.subheader("PROGRAMA")

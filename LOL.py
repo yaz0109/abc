@@ -25,7 +25,7 @@ def main():
       st.write()
 
       # Solicitar al usuario el valor de QA (caudal de alimentación)
-      QA = st.number_input("Ingrese el valor de QA (caudal de alimentación): ", step=0.00001)
+      QA = st.number_input("Ingrese el valor de QA (caudal de alimentación): ", step= 0.00001)
       st.write()
 
       #DATOS

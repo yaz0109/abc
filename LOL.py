@@ -806,5 +806,283 @@ def main():
       else:
           st.write("Dirección de Q8: JU")
 
+      
+      #CÁLCULO DE HGL
+      st.write("Considerando el punto de alimentación como la altura = 0 m")
+      st.write()
+
+      #CÁLCULO DE PREESIONES
+
+      #PESO ESPECIFICO
+      y=991*9.81
+
+      #ALTURAS DE CADA PUNTO
+
+      A=0
+      B = 0
+      C = -13
+      D = -13
+      E = -13
+      F = -13
+      G = 12
+      H = 12
+      I = -5
+      J = -13
+      K = -13
+      L = -13
+      M = -29
+      N = -29
+      O = -13
+      P = -13
+      Q = -26
+      R = -26
+      S = -26
+      T = -26
+      U = -13
+      Z = -13
+      V = -13
+      X = -13
+      Y = -13
+      W = -13
+      J = -13
+
+      #LONGITUDES DE CADA SECCIÓN DE TUBERÍA
+
+      AB = 25
+      BC = 13
+      CD = 14
+      DE = 22
+      EF = 8
+      FG = 12
+      GH = 33
+      HI = 52
+      IJ = 8
+      JK = 7
+      KL = 50
+      LM = 16
+      MN = 73
+      NO = 16
+      OP = 25
+      PQ = 13
+      QR = 14
+      RS = 25
+      ST = 19
+      TU = 13
+      UZ = 22
+      UV = 10
+      VX = 8.5
+      XY = 15
+      YW = 8.5
+      WE = 19
+      ZA = 13
+      UJ = 33
+
+      #CALCULOS DE Kde cada sección
+
+      KAB = fT1 * (AB / ID1) * (1 / (2 * g * A1 ** 2))
+      KBC = fT1 * (BC / ID1) * (1 / (2 * g * A1 ** 2))+(8*fT1)* (1 / (2 * g * A1 ** 2))
+      KCD = fT1 * (CD / ID1) * (1 / (2 * g * A1 ** 2))
+      KDE = fT1 * (DE / ID1) * (1 / (2 * g * A1 ** 2))
+
+      KEF = fT2 * (EF / ID2) * (1 / (2 * g * A2 ** 2))
+      KFG = fT2 * (FG / ID2) * (1 / (2 * g * A2 ** 2))
+      KGH = fT2 * (GH / ID2) * (1 / (2 * g * A2 ** 2))
+      KHI = fT2 * (HI / ID2) * (1 / (2 * g * A2 ** 2))
+      KIJ = fT2 * (IJ / ID2) * (1 / (2 * g * A2 ** 2))
+
+      KJK = fT3 * (JK / ID3) * (1 / (2 * g * A3 ** 2))
+      KKL = fT3 * (KL / ID3) * (1 / (2 * g * A3 ** 2))
+      KLM = fT3 * (LM / ID3) * (1 / (2 * g * A3 ** 2))
+
+      KMN = fT4 * (MN / ID4) * (1 / (2 * g * A4 ** 2))
+      KNO = fT4 * (NO / ID4) * (1 / (2 * g * A4 ** 2))
+      KOP = fT4 * (OP / ID4) * (1 / (2 * g * A4 ** 2))
+      KPQ = fT4 * (PQ / ID4) * (1 / (2 * g * A4 ** 2))
+      KQR = fT4 * (QR / ID4) * (1 / (2 * g * A4 ** 2))
+      KRS = fT4 * (RS / ID4) * (1 / (2 * g * A4 ** 2))
+      KST = fT4 * (ST / ID4) * (1 / (2 * g * A4 ** 2))+(8*fT4)* (1 / (2 * g * A4 ** 2))
+      KTU = fT4 * (TU / ID4) * (1 / (2 * g * A4 ** 2))
+
+      KUZ = fT5 * (UZ / ID5) * (1 / (2 * g * A5 ** 2))+(8*fT5)* (1 / (2 * g * A5 ** 2))
+
+      KUV = fT7 * (UV / ID7) * (1 / (2 * g * A7 ** 2))
+      KVX = fT7 * (VX / ID7) * (1 / (2 * g * A7 ** 2))
+      KXY = fT7 * (XY / ID7) * (1 / (2 * g * A7 ** 2))
+      KYW = fT7 * (YW / ID7) * (1 / (2 * g * A7 ** 2))
+      KWE = fT7 * (WE / ID7) * (1 / (2 * g * A7 ** 2))
+
+      KZA = fT6 * (ZA / ID6) * (1 / (2 * g * A6 ** 2))
+
+      KUJ = fT8 * (UJ / ID8) * (1 / (2 * g * A8 ** 2))+(8*fT8)* (1 / (2 * g * A8 ** 2))
+
+      #CALCULO DE hL de cada sección
+
+      hLAB=KAB*(abs(Q1_I1))**2
+      hLBC=KBC*(abs(Q1_I1))**2
+      hLCD=KCD*(abs(Q1_I1))**2
+      hLDE=KDE*(abs(Q1_I1))**2
+
+      hLEF=KEF*(abs(Q2_I2))**2
+      hLFG=KFG*(abs(Q2_I2))**2
+      hLGH=KGH*(abs(Q2_I2))**2
+      hLHI=KHI*(abs(Q2_I2))**2
+      hLIJ=KIJ*(abs(Q2_I2))**2
+
+      hLJK=KJK*(abs(Q3_I3))**2
+      hLKL=KKL*(abs(Q3_I3))**2
+      hLLM=KLM*(abs(Q3_I3))**2
+
+      hLMN=KMN*(abs(Q4_I4))**2
+      hLNO=KNO*(abs(Q4_I4))**2
+      hLOP=KOP*(abs(Q4_I4))**2
+      hLPQ=KPQ*(abs(Q4_I4))**2
+      hLQR=KQR*(abs(Q4_I4))**2
+      hLRS=KRS*(abs(Q4_I4))**2
+      hLST=KST*(abs(Q4_I4))**2
+      hLTU=KTU*(abs(Q4_I4))**2
+
+      hLUZ=KUZ*(abs(Q5_I5))**2
+
+      hLUV=KUV*(abs(Q7_I7))**2
+      hLVX=KVX*(abs(Q7_I7))**2
+      hLXY=KXY*(abs(Q7_I7))**2
+      hLYW=KYW*(abs(Q7_I7))**2
+      hLWE=KWE*(abs(Q7_I7))**2
+
+      hLZA=KZA*(abs(Q6_I6))**2
+
+      hLUJ=KUJ*(abs(Q8_I8))**2
+
+      #KCODOS
+
+      KC1 = Codo1*kcodo*fT1 * (1 / (2 * g * A1 ** 2))
+      KC2 = Codo2*kcodo*fT2 * (1 / (2 * g * A2 ** 2))
+      KC3 = Codo3*kcodo*fT3 * (1 / (2 * g * A3 ** 2))
+      KC4 = Codo4*kcodo*fT4 * (1 / (2 * g * A4 ** 2))
+      KC5 = Codo5*kcodo*fT5 * (1 / (2 * g * A5 ** 2))
+      KC6 = Codo6*kcodo*fT6 * (1 / (2 * g * A6 ** 2))
+      KC7 = Codo7*kcodo*fT7 * (1 / (2 * g * A7 ** 2))
+      KC8 = Codo8*kcodo*fT8 * (1 / (2 * g * A8 ** 2))
+
+      #hLCODOS
+
+      hLC1=KC1*(abs(Q1_I1)**2)
+      hLC2=KC2*(abs(Q2_I2)**2)
+      hLC3=KC3*(abs(Q3_I3)**2)
+      hLC4=KC4*(abs(Q4_I4)**2)
+      hLC5=KC5*(abs(Q5_I5)**2)
+      hLC6=KC6*(abs(Q6_I6)**2)
+      hLC7=KC7*(abs(Q7_I7)**2)
+      hLC8=KC8*(abs(Q8_I8)**2)
+
+      #PRESIONESSSSSS
+      PA=(HGL*y)-A
+
+      #PAE
+      if Q1_I1*SQ1 > 0:
+          #PE=P2
+          PB = ((PA / y) + A - B - (hLAB+1/3*hLC1)) * y
+          PC = ((PB / y) + B - C - (hLBC+1/3*hLC1)) * y
+          PD = ((PC / y) + C - D - (hLCD+1/3*hLC1)) * y
+          PE = ((PD / y) + D - E - (hLDE)) * y
+
+      else:# PE=P1
+          PB = ((PA / y) + A - B + (hLAB + 1 / 3 * hLC1)) * y
+          PC = ((PB / y) + B - C + (hLBC + 1 / 3 * hLC1)) * y
+          PD = ((PC / y) + C - D + (hLCD + 1 / 3 * hLC1)) * y
+          PE = ((PD / y) + D - E + (hLDE)) * y
+
+      #PEJ
+      if Q2_I2*SQ2 > 0:
+          #PJ=P2
+          PF = ((PE / y) + E - F - (hLEF+1/4*hLC2)) * y
+          PG = ((PF / y) + F - G - (hLFG+1/4*hLC2)) * y
+          PH = ((PG / y) + G - H - (hLGH+1/4*hLC2)) * y
+          PI = ((PH / y) + H - I - (hLHI+1/4*hLC2)) * y
+          PJ = ((PI / y) + I - J - (hLIJ)) * y
+
+      else:# PJ=P1
+          PF = ((PE / y) + E - F + (hLEF + 1 / 4 * hLC2)) * y
+          PG = ((PF / y) + F - G + (hLFG + 1 / 4 * hLC2)) * y
+          PH = ((PG / y) + G - H + (hLGH + 1 / 4 * hLC2)) * y
+          PI = ((PH / y) + H - I + (hLHI + 1 / 4 * hLC2)) * y
+          PJ = ((PI / y) + I - J + (hLIJ)) * y
+
+      #PJM
+      if Q3_I3*SQ3 > 0:
+          #PM=P2
+          PK = ((PJ / y) + J - K - (hLJK+1/2*hLC3)) * y
+          PL = ((PK / y) + K - L - (hLKL+1/2*hLC3)) * y
+          PM = ((PL / y) + L - M - (hLLM)) * y
+
+      else:# PM=P1
+          PK = ((PJ / y) + J - K + (hLJK + 1 / 2 * hLC3)) * y
+          PL = ((PK / y) + K - L + (hLKL + 1 / 2 * hLC3)) * y
+          PM = ((PL / y) + L - M + (hLLM)) * y
+
+      #PMU
+      if Q4_I4*SQ4 > 0:
+          #PU=P1
+          PN = ((PM / y) + M - N + (hLMN + 1 / 7 * hLC4)) * y
+          PO = ((PN / y) + N - O + (hLNO + 1 / 7 * hLC4)) * y
+          PP = ((PO / y) + O - P + (hLOP + 1 / 7 * hLC4)) * y
+          PQ = ((PP / y) + P - Q + (hLPQ + 1 / 7 * hLC4)) * y
+          PR = ((PQ / y) + Q - R + (hLQR + 1 / 7 * hLC4)) * y
+          PS = ((PR / y) + R - S + (hLRS + 1 / 7 * hLC4)) * y
+          PT = ((PS / y) + S - T + (hLST + 1 / 7 * hLC4)) * y
+          PU = ((PT / y) + T - U + (hLTU)) * y
+
+      else:# PU=P2
+          PN = ((PM / y) + M - N - (hLMN + 1 / 7 * hLC4)) * y
+          PO = ((PN / y) + N - O - (hLNO + 1 / 7 * hLC4)) * y
+          PP = ((PO / y) + O - P - (hLOP + 1 / 7 * hLC4)) * y
+          PQ = ((PP / y) + P - Q - (hLPQ + 1 / 7 * hLC4)) * y
+          PR = ((PQ / y) + Q - R - (hLQR + 1 / 7 * hLC4)) * y
+          PS = ((PR / y) + R - S - (hLRS + 1 / 7 * hLC4)) * y
+          PT = ((PS / y) + S - T - (hLST + 1 / 7 * hLC4)) * y
+          PU = ((PT / y) + T - U - (hLTU)) * y
+
+      #PUZ
+      if Q5_I5*SQ5 > 0:
+          #PZ=P1
+          PZ = ((PU / y) + U - Z + (hLUZ)) * y
+
+      else:# PU=P2
+          PZ = ((PU / y) + U - Z - (hLUZ)) * y
+
+      #PUE
+      if Q7_I7*SQ7 > 0:
+          #PU=P1
+          PV =  ((PU / y) + U - V - (hLUV + 1 / 4 * hLC7)) * y
+          PX =  ((PV / y) + V - X - (hLVX + 1 / 4 * hLC7)) * y
+          PY =  ((PX / y) + X - Y - (hLXY + 1 / 4 * hLC7)) * y
+          PW =  ((PY / y) + Y - W - (hLYW + 1 / 4 * hLC7)) * y
+          PE2 = ((PW / y) + W - E - (hLWE)) * y
+
+      else:# PU=P2
+          PV = ((PU / y) + U - V +  (hLUV + 1 / 4 * hLC7)) * y
+          PX = ((PV / y) + V - X +  (hLVX + 1 / 4 * hLC7)) * y
+          PY = ((PX / y) + X - Y +  (hLXY + 1 / 4 * hLC7)) * y
+          PW = ((PY / y) + Y - W +  (hLYW + 1 / 4 * hLC7)) * y
+          PE2 = ((PW / y) + W - E + (hLWE)) * y
+
+      #PZA
+      if Q6_I6*SQ6 > 0:
+          #PZ=P2
+          PZ2 = ((PA / y) + A - Z - (hLZA)) * y
+
+      else:# PZ=P1
+          PZ2 = ((PA / y) + A - Z + (hLZA)) * y
+
+      #PUJ
+      if Q8_I8*SQ8 > 0:
+          #PJ=P2
+          PU2 = ((PJ / y) + U - J + (hLUJ)) * y
+
+      else:# PU=P2
+          PU2 = ((PJ / y) + U - J - (hLUJ)) * y
+
+      # CONVERSION A PSI
+      
 if __name__ == "__main__":
     main()

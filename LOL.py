@@ -54,7 +54,7 @@ def main():
       # Solicitar al usuario el valor de HGL en metros
       HGL = st.number_input("Ingrese el valor de HGL de alimentación (en metros): ")
       
-           
+      st.write("HGL=",HGL,"m")     
       
       # Mostrar los valores asignados
       st.write("Valores de longitud de tuberías, diametros nominal en función al caudal de alimentación:")

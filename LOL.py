@@ -48,7 +48,7 @@ def main():
       g= 9.81 # en m/s^2
       e= 4.60E-05  # en metros
       v= 1.085000E-06  # en m^2/s
-      st.write("Aqui se muestra una tabla de las propiedades del fluido que se encuentra en la red de tuberías con una rugosidad de",e,"metros" )
+      st.write("Aqui se muestra una tabla de las propiedades del fluido que se encuentra en la red de tuberías con una rugosidad de",e,"metros." )
       data = {
         "Fluido": ["Agua (42.5°C)"],
       "Densidad promedio (kg/m^3)": ["991"],

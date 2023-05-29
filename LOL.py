@@ -38,10 +38,7 @@ def main():
       L6 = 13
       L7 = 61
       L8 = 33
-      data = {
-        "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
-        "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8]
-            }
+
 
       # Mostrar los valores en forma de tabla
       st.table(data)
@@ -57,15 +54,11 @@ def main():
       
       # Mostrar los valores asignados
       st.write("Valores de longitud de tuberías:")
-      st.write("L1 =", L1,"mts")
-      st.write("L2 =", L2,"mts")
-      st.write("L3 =", L3,"mts")
-      st.write("L4 =", L4,"mts")
-      st.write("L5 =", L5,"mts")
-      st.write("L6 =", L6,"mts")
-      st.write("L7 =", L7,"mts")
-      st.write("L8 =", L8,"mts")
-      st.write()
+            data = {
+        "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
+        "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8]
+            }
+    
       # Calcular las variables establecidas
       Q6 = QA * 0.35
       Q7 = QA * 0.5

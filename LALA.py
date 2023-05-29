@@ -1,5 +1,9 @@
 import math
+import streamlit as st
+import numpy as np
+import pandas as pd
 
+def PROGRAMA():
 print("RED DE TUBERÍAS")
 print()
 print("Aquí, se proporciona un croquis isométrico de la red de tuberías como ayuda visual."

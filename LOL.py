@@ -38,6 +38,13 @@ def main():
       L6 = 13
       L7 = 61
       L8 = 33
+          data = {
+        "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
+        "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8]
+    }
+
+    # Mostrar los valores en forma de tabla
+    st.table(data)
       # Definir la velocidad constante
       velocidad = 1.5
       # Declarar los valores para gravedad, rugosidad, y viscosidad

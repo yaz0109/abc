@@ -253,6 +253,23 @@ def main():
       st.write("Se sabe que en cada ramal existen accesorios, tanto codos como válvulas:")
       st.write("Para aquellos que tienen dichos artículos se asignan")
 
+            #Codos
+
+      Codo1=3
+      Codo2=4
+      Codo3=2
+      Codo4=7
+      Codo5=0
+      Codo6=0
+      Codo7=4
+      Codo8=0
+
+      #Valores de K para accesorios
+
+      kcodo=30
+      kválvula=8
+
+      #HARDY CROSS
       
 if __name__ == "__main__":
     main()

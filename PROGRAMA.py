@@ -1,11 +1,14 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import Calculador as Cal
 
 def PROGRAMA():
     st.title("DATOS DE ENTRADA")
     st.write("Resultado")
     
+    Cal. Calculador()
+
     st.title('My title')
     st.header('My header')
     st.subheader('My sub')

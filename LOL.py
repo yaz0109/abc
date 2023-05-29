@@ -543,9 +543,12 @@ def main():
 
 
       #ITERACIÓN 2,3,4... (COPIAR CAUDALES ANTERIORES SOLAMENTE)
+      max_iteraciones = 21
+      tolerancia = 0.001
+      iteracion = 0
 
-      iteracion = 2
-      while iteracion < 21:
+      while iteracion < max_iteraciones:
+            iteracion = 2
 
           # Resto del código...
 

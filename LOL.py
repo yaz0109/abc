@@ -229,14 +229,6 @@ def main():
           area = math.pi * (radio ** 2)
           return area
 
-      ID1 = # Asigna el valor de ID1
-      ID2 = # Asigna el valor de ID2
-      ID3 = # Asigna el valor de ID3
-      ID4 = # Asigna el valor de ID4
-      ID5 = # Asigna el valor de ID5
-      ID6 = # Asigna el valor de ID6
-      ID7 = # Asigna el valor de ID7
-      ID8 = # Asigna el valor de ID8
 
       A1 = calcular_area_diametro(ID1)
       A2 = calcular_area_diametro(ID2)

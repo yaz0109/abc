@@ -18,8 +18,7 @@ def INTRODUCCION():
     st.markdown("La biblioteca está ajustada y deseñada con el fin determinar la presión, HGL diámetro nominal, interno y tasas de flujo. Como se mostrara a continuación en la sección **PROGRAMA**.")
     
     image_cau = "https://i.pinimg.com/564x/9e/51/ad/9e51ad004a6af9462cdcf6f3f8ec1464.jpg"
-    image_width = st.image(image_cau, width=100, use_column_width=True, caption="Balance Global.").width
-    st.image(image_cau, width=20,  use_column_width=True, caption="Balance global")
+    st.image(image_cau, width=100, caption="Balance global")
 
 if __name__ == '__main__':
     INTRODUCCION()

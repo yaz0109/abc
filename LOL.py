@@ -231,7 +231,7 @@ def main():
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],
       "Caudal (m^3/s)": ["{:.8f}".format(Q1), "{:.8f}".format(Q2), "{:.8f}".format(Q3), "{:.8f}".format(Q4), "{:.8f}".format(Q5), "{:.8f}".format(Q6), "{:.8f}".format(Q7), "{:.8f}".format(Q8)],
-      "Diámetro (m)": ["{:.4f}".format(ID1), "{:.4f}".format(ID2), "{:.4f}".format(ID3), "{:.4f}".format(ID4), "{:.4f}".format(ID5), "{:.4f}".format(ID6), "{:.4f}".format(ID7), "{:.4f}".format(ID8)],
+      
 
             }
     

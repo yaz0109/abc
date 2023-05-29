@@ -48,17 +48,21 @@ def main():
       g= 9.81 # en m/s^2
       e= 4.60E-05  # en metros
       v= 1.085000E-06  # en m^2/s
+      st.write("Aqui se muestra una tabla de las propiedades del fluido que se encuentra en la red de tuberías con una rugosidad de",e,"metros" )
       data = {
         "Fluido": ["Agua (42.5°C)"],
       "Densidad promedio (kg/m^3)": ["991"],
       "Gravedad (m/s^2)": ["9.81"],
       "Peso Específico (N/m^3)": [y],
+      "Viscosidad (m^2/s)": [v],
 
             }
     
       # Mostrar los valores en forma de tabla
       st.table(data)
-
+      st.write("Gravedad=",g,"m/s^2")
+      st.write("Rugosidad del tubo=",e,"m")
+      st.write("Viscosidad=",v,"m^2/s")
       
       # Solicitar al usuario el valor de HGL en metros
       HGL = st.number_input("Ingrese el valor de HGL de alimentación (en metros): ")

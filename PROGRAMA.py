@@ -6,7 +6,6 @@ def PROGRAMA():
     st.title("DATOS DE ENTRADA")
     st.write("Resultado")
     
-    Cal. Calculador()
 
     st.title('My title')
     st.header('My header')

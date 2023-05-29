@@ -210,7 +210,7 @@ def main():
       st.write()
 
       # Mostrar los valores asignados
-      st.write("Valores de longitud de cada sección de tubería, diametro en función al caudal de alimentación, obtenidos de tablas tomando como criterio de diseño una velocidad constante para el agua (aproximadamente 1.5 m/s()):")
+      st.write("Valores de longitud de cada sección de tubería, diametro en función al caudal de alimentación, obtenidos de tablas tomando como criterio de diseño una velocidad constante para el agua (aproximadamente 1.5 m/s):")
       data = {
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],

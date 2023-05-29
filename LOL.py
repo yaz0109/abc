@@ -251,6 +251,7 @@ def main():
       st.write("Tubo 8:", A8,"mts^2")
       st.write()
 
+
       st.write("Se sabe que en cada ramal existen accesorios, tanto codos como válvulas:")
       st.write("Para aquellos que tienen dichos artículos se asignan")
 

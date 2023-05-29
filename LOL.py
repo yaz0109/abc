@@ -59,6 +59,9 @@ def main():
         "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8]
             }
     
+      # Mostrar los valores en forma de tabla
+      st.table(data)
+      
       # Calcular las variables establecidas
       Q6 = QA * 0.35
       Q7 = QA * 0.5

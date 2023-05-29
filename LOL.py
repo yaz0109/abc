@@ -42,11 +42,22 @@ def main():
 
       # Definir la velocidad constante
       velocidad = 1.5
+      #PESO ESPECIFICO
+      y=991*9.81
       # Declarar los valores para gravedad, rugosidad, y viscosidad
       g= 9.81 # en m/s^2
       e= 4.60E-05  # en metros
       v= 1.085000E-06  # en m^2/s
-      
+      data = {
+        "Fluido": ["Agua (42.5°C)"],
+      "Densidad promedio (kg/m^3)": ["991"],
+      "Gravedad (m/s^2)": ["9.81"],
+      "Peso Específico (N/m^3)": [y],
+
+            }
+    
+      # Mostrar los valores en forma de tabla
+      st.table(data)
       st.write("Gravedad=",g,"m/s^2")
       st.write("Rugosidad del tubo=",e,"m")
       st.write("Viscosidad=",v,"m^2/s")
@@ -837,10 +848,9 @@ def main():
       st.write("Considerando el punto de alimentación como la altura = 0 m")
       st.write()
 
-      #CÁLCULO DE PREESIONES
+      #CÁLCULO DE PRESIONES
 
-      #PESO ESPECIFICO
-      y=991*9.81
+ 
 
       #ALTURAS DE CADA PUNTO
 

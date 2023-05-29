@@ -21,12 +21,15 @@ def INTRODUCCION():
     
     col1, col2 = st.columns(2)
     col1.subheader('Columna 1')
-    col1.write('Contenido de la columna 1')
-    image_cau = "https://i.pinimg.com/564x/9e/51/ad/9e51ad004a6af9462cdcf6f3f8ec1464.jpg"
-    col1.image(image_cau, width=220, caption="Balance global")
+    col1.write('Ecuaciones de Balance de Masa')
+    image_cau = "https://i.pinimg.com/564x/29/b6/0a/29b60a5e14eebfe31e0b80216dd2129c.jpg"
+    col1.image(image_cau, width=220, caption="  ")
     
-    col2.subheader('Columna 2')
-    col2.write('Contenido de la columna 2') 
+    col2.subheader('Balance Global')
+    col2.write(' ')
+    image_bg = "https://i.pinimg.com/564x/9e/51/ad/9e51ad004a6af9462cdcf6f3f8ec1464.jpg"
+    col2.image(image_bg, width=220, caption="  ")
+    
     
 
 if __name__ == '__main__':

@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-def LOL():
+def main():
 
       st.write("RED DE TUBERÍAS")
       st.write()
@@ -47,3 +47,7 @@ def LOL():
 
       # Solicitar al usuario el valor de HGL en metros
       HGL = st.number_input("Ingrese el valor de HGL de alimentación (en metros): ")
+      
+      
+if __name__ == "__main__":
+    main()

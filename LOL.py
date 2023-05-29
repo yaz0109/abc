@@ -94,7 +94,7 @@ def main():
     
       # Mostrar los valores en forma de tabla
       st.table(data)
-      
+      st.write("Los valores que de caudales supuestos que se reportan luego de hacer el cálculo, son signo negativo, se deben a que fueron modificados respecto al sentido de flujo que se predestino en el diagrama.")  
  # Calcular las variables establecidas
       Q6 = QA * 0.35
       Q7 = QA * 0.5

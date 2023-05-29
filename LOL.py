@@ -286,6 +286,31 @@ def main():
       st.write("5.- Con el valor K, tabular el hL del tubo")
       st.write("6.- Determinar la corrección para el caudal, renombrarlo y continuar con la siguiente iteración")
       st.write("7.- En caso de tener un caudal en más de un circuito usar la corrección común para caudal total de este")
+      
+      
+      # Cálculo de D/e
+      D_e_1 = ID1/e
+      D_e_2 = ID2/e
+      D_e_3 = ID3/e
+      D_e_4 = ID4/e
+      D_e_5 = ID5/e
+      D_e_6 = ID6/e
+      D_e_7 = ID7/e
+      D_e_8 = ID8/e
+
+      #ITERACIÓN 1
+
+      I=1
+
+
+
+
+      #CIRCUITO 1
+      Q1_I1=Q1
+      Q7_I7=-1*Q7
+      Q5_I5=-1*Q5
+      Q6_I6=-1*Q6
+
 
 if __name__ == "__main__":
     main()

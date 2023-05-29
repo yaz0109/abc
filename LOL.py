@@ -712,6 +712,37 @@ def main():
 
       # Actualizar el valor de iteracion
           iteracion += 1
+            
+
+      iteracion = 1  # Valor de iteración de ejemplo
+
+      st.write("ITERACIÓN", iteracion)
+      st.write()
+
+      # CAUDALES FINALES
+
+      st.write("Q tubo 1 =", Q1_I1)
+      st.write("Q tubo 2 =", Q2_I2)
+      st.write("Q tubo 3 =", Q3_I3)
+      st.write("Q tubo 4 =", Q4_I4)
+      st.write("Q tubo 5 =", Q5_I5)
+      st.write("Q tubo 6 =", Q6_I6)
+      st.write("Q tubo 7 =", Q7_I7)
+      st.write("Q tubo 8 =", Q8_I8)
+      st.write()
+
+      # PÉRDIDAS TOTALES POR LOS TUBOS YA ACCESORIOS
+
+      st.write("hL de tubo 1:", hL1)
+      st.write("hL de tubo 2:", hL2)
+      st.write("hL de tubo 3:", hL3)
+      st.write("hL de tubo 4:", hL4)
+      st.write("hL de tubo 5:", hL5)
+      st.write("hL de tubo 6:", hL6)
+      st.write("hL de tubo 7:", hL7)
+      st.write("hL de tubo 8:", hL8)
+      st.write()
+
 
 if __name__ == "__main__":
     main()

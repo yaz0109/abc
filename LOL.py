@@ -39,29 +39,21 @@ def main():
       L7 = 61
       L8 = 33
 
-
-
       # Definir la velocidad constante
       velocidad = 1.5
       # Declarar los valores para gravedad, rugosidad, y viscosidad
       g= 9.81 # en m/s^2
       e= 4.60E-05  # en metros
       v= 1.085000E-06  # en m^2/s
-
+      
+      st.write("Gravedad=",g,"m/s^2")
+      st.write("Rugosidad del tubo=",e,"m")
+      st.write("Viscosidad=",v,"m^2/s")
+      
       # Solicitar al usuario el valor de HGL en metros
       HGL = st.number_input("Ingrese el valor de HGL de alimentación (en metros): ")
       
-      # Mostrar los valores asignados
-      st.write("Valores de longitud de tuberías:")
-      data = {
-        "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
-        "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8]
-            }
-    
-      # Mostrar los valores en forma de tabla
-      st.table(data)
-      
-      # Calcular las variables establecidas
+            # Calcular las variables establecidas
       Q6 = QA * 0.35
       Q7 = QA * 0.5
       Q8 = Q6 * 0.35
@@ -244,6 +236,20 @@ def main():
       st.write("Tubo 7:", A7,"mts^2")
       st.write("Tubo 8:", A8,"mts^2")
       st.write()
+      
+      # Mostrar los valores asignados
+      st.write("Valores de longitud de tuberías, diametros nominal en función al caudal de alimentación:")
+      data = {
+        "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
+        "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8]
+            "Diametro (m)":[],
+      "ND (m)":[]
+      }
+    
+      # Mostrar los valores en forma de tabla
+      st.table(data)
+      
+
 
       st.write("Se sabe que en cada ramal existen accesorios, tanto codos como válvulas:")
       st.write("Para aquellos que tienen dichos artículos se asignan")

@@ -17,17 +17,17 @@ def INTRODUCCION():
     st.write("Este método consiste en el análisis de un sistema de tuberías empleando procedimiento de iteraciones. Para la aplicación de este método se requiere realizar un balance global de masa y un balance de pérdidas en cada circuito igualado a cero.")
     st.markdown("La biblioteca está ajustada y deseñada con el fin determinar la presión, HGL diámetro nominal, interno y tasas de flujo. Como se mostrara a continuación en la sección **PROGRAMA**.")
     
+    st.markdown('_Balance global de masa._')
+    
     col1, col2 = st.columns(2)
     col1.subheader('Columna 1')
     col1.write('Contenido de la columna 1')
-        image_cau = "https://i.pinimg.com/564x/9e/51/ad/9e51ad004a6af9462cdcf6f3f8ec1464.jpg"
-        st.image(image_cau, width=220, caption="Balance global")
+    image_cau = "https://i.pinimg.com/564x/9e/51/ad/9e51ad004a6af9462cdcf6f3f8ec1464.jpg"
+    col1.image(image_cau, width=220, caption="Balance global")
     
     col2.subheader('Columna 2')
     col2.write('Contenido de la columna 2') 
-
-    image_cau = "https://i.pinimg.com/564x/9e/51/ad/9e51ad004a6af9462cdcf6f3f8ec1464.jpg"
-    st.image(image_cau, width=220, caption="Balance global")
+    
 
 if __name__ == '__main__':
     INTRODUCCION()

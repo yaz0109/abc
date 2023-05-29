@@ -58,9 +58,7 @@ def main():
     
       # Mostrar los valores en forma de tabla
       st.table(data)
-      st.write("Gravedad=",g,"m/s^2")
-      st.write("Rugosidad del tubo=",e,"m")
-      st.write("Viscosidad=",v,"m^2/s")
+
       
       # Solicitar al usuario el valor de HGL en metros
       HGL = st.number_input("Ingrese el valor de HGL de alimentación (en metros): ")

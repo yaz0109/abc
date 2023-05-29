@@ -20,8 +20,8 @@ def INTRODUCCION():
     st.markdown('_Balance global de masa._')
     
     col1, col2 = st.columns(2)
-    col1.subheader('Columna 1')
-    col1.write('Ecuaciones de Balance de Masa')
+    col1.subheader('Ecuaciones de Balance de Masa')
+    col1.write('  ')
     image_cau = "https://i.pinimg.com/564x/29/b6/0a/29b60a5e14eebfe31e0b80216dd2129c.jpg"
     col1.image(image_cau, width=220, caption="  ")
     

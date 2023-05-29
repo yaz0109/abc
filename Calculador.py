@@ -1,7 +1,7 @@
 import math
 import streamlit as st
 import pandas as pd
-import numpy as
+import numpy as nu
 
 def(Calculador)
 

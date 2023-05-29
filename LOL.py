@@ -80,15 +80,7 @@ def main():
 
 
       # Imprimir los resultados
-      st.write("Variables establecidas:")
-      st.write("Q1 =", Q1,"m3/s")
-      st.write("Q2 =", Q2,"m3/s")
-      st.write("Q3 =", Q3,"m3/s")
-      st.write("Q4 =", Q4,"m3/s")
-      st.write("Q5 =", Q5,"m3/s")
-      st.write("Q6 =", Q6,"m3/s")
-      st.write("Q7 =", Q7,"m3/s")
-      st.write("Q8 =", Q8,"m3/s")
+
       st.write()
 
       # Mostrar los valores asignados

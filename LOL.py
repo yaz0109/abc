@@ -215,14 +215,14 @@ def main():
       ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8 = diametros_internos
 
       # Imprimir los valores de diámetro interno
-      st.write(f"El diámetro interno para caudal1 es: {ID1} mts")
-      st.write(f"El diámetro interno para caudal2 es: {ID2} mts")
-      st.write(f"El diámetro interno para caudal3 es: {ID3} mts")
-      st.write(f"El diámetro interno para caudal4 es: {ID4} mts")
-      st.write(f"El diámetro interno para caudal5 es: {ID5} mts")
-      st.write(f"El diámetro interno para caudal6 es: {ID6} mts")
-      st.write(f"El diámetro interno para caudal7 es: {ID7}""mts")
-      st.write(f"El diámetro interno para caudal8 es: {ID8}""mts")
+      st.write(f"El diámetro interno para caudal1 es: {ID1:.4f} mts")
+      st.write(f"El diámetro interno para caudal2 es: {ID2:.4f} mts")
+      st.write(f"El diámetro interno para caudal3 es: {ID3:.4f} mts")
+      st.write(f"El diámetro interno para caudal4 es: {ID4:.4f} mts")
+      st.write(f"El diámetro interno para caudal5 es: {ID5:.4f} mts")
+      st.write(f"El diámetro interno para caudal6 es: {ID6:.4f} mts")
+      st.write(f"El diámetro interno para caudal7 es: {ID7:.4f}""mts")
+      st.write(f"El diámetro interno para caudal8 es: {ID8:.4f}""mts")
       st.write()
 
       # Mostrar los valores asignados
@@ -231,7 +231,7 @@ def main():
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],
       "Caudal (m^3/s)": ["{:.8f}".format(Q1), "{:.8f}".format(Q2), "{:.8f}".format(Q3), "{:.8f}".format(Q4), "{:.8f}".format(Q5), "{:.8f}".format(Q6), "{:.8f}".format(Q7), "{:.8f}".format(Q8)],
-      "Diámetro (mts)": ["{:.4f}".format(d) for d in diametros_internosdiametros_internos]
+      "Diámetro (mts)": ["{:.4f}".format(d) for d in diametros_internos]
 
             }
     

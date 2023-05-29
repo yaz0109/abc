@@ -243,20 +243,7 @@ def main():
       st.write()
 
 
-      def calcular_area_diametro(diametro):
-          radio = diametro / 2
-          area = math.pi * (radio ** 2)
-          return area
-
-
-      A1 = calcular_area_diametro(ID1)
-      A2 = calcular_area_diametro(ID2)
-      A3 = calcular_area_diametro(ID3)
-      A4 = calcular_area_diametro(ID4)
-      A5 = calcular_area_diametro(ID5)
-      A6 = calcular_area_diametro(ID6)
-      A7 = calcular_area_diametro(ID7)
-      A8 = calcular_area_diametro(ID8)
+      
 
       st.write("Áreas de los diámetros:")
       st.write("Tubo 1:", A1,"mts^2")

@@ -17,7 +17,7 @@ def INTRODUCCION():
     st.write("Este método consiste en el análisis de un sistema de tuberías empleando procedimiento de iteraciones. Para la aplicación de este método se requiere realizar un balance global de masa y un balance de pérdidas en cada circuito igualado a cero.")
     st.markdown("La biblioteca está ajustada y deseñada con el fin determinar la presión, HGL diámetro nominal, interno y tasas de flujo. Como se mostrara a continuación en la sección **PROGRAMA**.")
     
-    image_cau = "https://i.pinimg.com/564x/a1/af/5c/a1af5c89259012b9f17748685cd76685.jpg"
+    image_cau = "https://www.pinterest.com.mx/8c007017-445f-44ac-ba66-7f6bf7d0dbc6"
     image_width = st.image(image_cau, use_column_width=True, caption="Imagen relacionada").width
     st.image(image_cau, width=int(image_width / 2), caption="Imagen reducida a la mitad")
 

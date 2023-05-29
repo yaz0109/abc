@@ -242,8 +242,8 @@ def main():
       data = {
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
         "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8]
-            "Diametro (m)":[],
-      "ND (m)":[]
+            "Diametro (m)":[ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8],
+      "ND (m)":[diametros]
       }
     
       # Mostrar los valores en forma de tabla

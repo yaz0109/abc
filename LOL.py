@@ -545,7 +545,7 @@ def main():
       #ITERACIÓN 2,3,4... (COPIAR CAUDALES ANTERIORES SOLAMENTE)
 
       iteracion = 2
-      while iteracion <= 21:
+      st.while iteracion <= 21:
 
           # Resto del código...
 

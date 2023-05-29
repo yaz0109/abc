@@ -757,5 +757,54 @@ def main():
       SQ7=-1
       SQ8=-1
       
+
+      # Q1
+      if Q1_I1 * SQ1 > 0:
+          st.write("Dirección de Q1: AE")
+      else:
+          st.write("Dirección de Q1: EA")
+
+      # Q2
+      if Q2_I2 * SQ2 > 0:
+          st.write("Dirección de Q2: EJ")
+      else:
+          st.write("Dirección de Q2: JE")
+
+      # Q3
+      if Q3_I3 * SQ3 > 0:
+          st.write("Dirección de Q3: JM")
+      else:
+          st.write("Dirección de Q3: MJ")
+
+      # Q4
+      if Q4_I4 * SQ4 > 0:
+          st.write("Dirección de Q4: UM")
+      else:
+          st.write("Dirección de Q4: MU")
+
+      # Q5
+      if Q5_I5 * SQ5 > 0:
+          st.write("Dirección de Q5: ZU")
+      else:
+          st.write("Dirección de Q5: UZ")
+
+      # Q6
+      if Q6_I6 * SQ6 > 0:
+          st.write("Dirección de Q6: AZ")
+      else:
+          st.write("Dirección de Q6: ZA")
+
+      # Q7
+      if Q7_I7 * SQ7 > 0:
+          st.write("Dirección de Q7: UE")
+      else:
+          st.write("Dirección de Q7: EU")
+
+      # Q8
+      if Q8_I8 * SQ8 > 0:
+          st.write("Dirección de Q8: UJ")
+      else:
+          st.write("Dirección de Q8: JU")
+
 if __name__ == "__main__":
     main()

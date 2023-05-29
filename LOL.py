@@ -1128,5 +1128,66 @@ def main():
       st.write("PUJ =", PU2 / 6894.76)
       st.write()
 
+      #CALCULO DE HGL
+
+      HGLB=(PB/y)+B
+      HGLC=(PC/y)+C
+      HGLD=(PD/y)+D
+      HGLE=(PE/y)+E
+      HGLF=(PF/y)+F
+      HGLG=(PG/y)+G
+      HGLH=(PH/y)+H
+      HGLI=(PI/y)+I
+      HGLJ=(PJ/y)+J
+      HGLK=(PK/y)+K
+      HGLL=(PL/y)+L
+      HGLM=(PM/y)+M
+      HGLN=(PN/y)+N
+      HGLO=(PO/y)+O
+      HGLP=(PP/y)+P
+      HGLQ=(PQ/y)+Q
+      HGLR=(PR/y)+R
+      HGLS=(PS/y)+S
+      HGLT=(PT/y)+T
+      HGLU=(PU/y)+U
+      HGLZ=(PZ/y)+Z
+      HGLV=(PV/y)+V
+      HGLX=(PX/y)+X
+      HGLY=(PY/y)+Y
+      HGLW=(PW/y)+W
+      HGLE2=(PE2/y)+E
+      HGLZ2=(PZ2/y)+Z
+      HGLU2=(PU2/y)+U
+
+
+      st.write(HGLB)
+      st.write(HGLC)
+      st.write(HGLD)
+      st.write(HGLE)
+      st.write(HGLF)
+      st.write(HGLG)
+      st.write(HGLH)
+      st.write(HGLI)
+      st.write(HGLJ)
+      st.write(HGLK)
+      st.write(HGLL)
+      st.write(HGLM)
+      st.write(HGLN)
+      st.write(HGLO)
+      st.write(HGLP)
+      st.write(HGLQ)
+      st.write(HGLR)
+      st.write(HGLS)
+      st.write(HGLT)
+      st.write(HGLU)
+      st.write(HGLZ)
+      st.write(HGLV)
+      st.write(HGLX)
+      st.write(HGLY)
+      st.write(HGLW)
+      st.write(HGLE2)
+      st.write(HGLZ2)
+      st.write(HGLU2)
+
 if __name__ == "__main__":
     main()

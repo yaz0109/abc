@@ -1157,7 +1157,7 @@ def LALA():
       HGLZ2=(PZ2/y)+Z
       HGLU2=(PU2/y)+U
 
-      print(HGLB)
+      print("HGL B ="HGLB)
       print(HGLC)
       print(HGLD)
       print(HGLE)

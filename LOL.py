@@ -714,7 +714,6 @@ def main():
           iteracion += 1
             
 
-      iteracion = 1  # Valor de iteración de ejemplo
 
       st.write("ITERACIÓN", iteracion)
       st.write()

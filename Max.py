@@ -20,6 +20,7 @@ def main():
     elif seleccion == "PROGRAMA":
         st.subheader("PROGRAMA")
         bs.PROGRAMA()
+        Cal.Calculador()
 
     elif seleccion == "FUENTES BIBLIOGRAFICAS":
         st.subheader("FUENTES BIBLIOGRAFICAS")

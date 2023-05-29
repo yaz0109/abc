@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import math
 import INTRODUCCION as io
-import PROGRAMA as bs
+import LALA as la
 import FUENTES as fb
 
 
@@ -19,7 +19,7 @@ def main():
 
     elif seleccion == "PROGRAMA":
         st.subheader("PROGRAMA")
-        bs.PROGRAMA()
+        la.LALA()
         
 
     elif seleccion == "FUENTES BIBLIOGRAFICAS":

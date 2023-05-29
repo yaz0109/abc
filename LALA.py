@@ -59,19 +59,17 @@ def LALA():
       st.write("L7 =", L7,"mts")
       st.write("L8 =", L8,"mts")
       st.write()
-      # Calcular las variables estable
-
+      # Calcular las variables establecidas
       Q6 = QA * 0.35
       Q7 = QA * 0.5
       Q8 = Q6 * 0.35
 
-      #Sustituir en los demás caudales
+      # Sustituir en los demás caudales
       Q1 = QA - Q6
       Q2 = QA - Q6 + Q7
       Q3 = (3/4) * QA + Q8 + Q7 - Q6
       Q4 = Q6 - Q7 - Q8 - (1/2) * QA
       Q5 = Q6 - (1/4) * QA
-
 
       # Imprimir los resultados
       print("Variables establecidas:")
@@ -88,19 +86,28 @@ def LALA():
       def asignar_diametro(*caudales):
           data = [
               (0.00001, 0.00013, "1/8"),
-              (0.00013, 0.00019, "3/8"),
-              (0.00019, 0.00038, "1/2"),
-              (0.00038, 0.00063, "3/4"),
-              (0.00063, 0.00158, "1"),
-              (0.00158, 0.00284, "1 1/2"),
-              (0.00284, 0.00789, "2"),
-              (0.00789, 0.01577, "3"),
-              (0.01577, 0.03469, "5"),
-              (0.03469, 0.08832, "6"),
-              (0.08832, 0.15772, "14"),
-              (0.15772, 0.28402, "16"),
-              (0.28402, 0.50461, "20"),
-              (0.50461, 1.17685, "24")
+              (0.00013, 0.00019, "1/4"),
+              (0.00019, 0.00038, "3/8"),
+              (0.00038, 0.00063, "1/2"),
+              (0.00063, 0.00158, "3/4"),
+              (0.00158, 0.00284, "1"),
+              (0.00284, 0.00789, "1 1/4"),
+              (0.00789, 0.01577, "1 1/2"),
+              (0.01577, 0.03469, "2"),
+              (0.03469, 0.08832, "2 1/2"),
+              (0.08832, 0.15772, "3"),
+              (0.15772, 0.28402, "3 1/2"),
+              (0.28402, 0.50461, "4"),
+              (0.50461, 1.17685, "5"),
+              (1.17685, 2.64806, "6"),
+              (2.64806, 5.94476, "8"),
+              (5.94476, 11.86048, "10"),
+              (11.86048, 22.23696, "12"),
+              (22.23696, 40.01411, "14"),
+              (40.01411, 71.20866, "16"),
+              (71.20866, 126.7134, "18"),
+              (126.7134, 224.9965, "20"),
+              (224.9965, 524.8995, "24")
           ]
 
           diametros = []
@@ -124,24 +131,24 @@ def LALA():
       caudal7 = abs(Q7)
       caudal8 = abs(Q8)
 
+
       diametros_asignados = asignar_diametro(caudal1, caudal2, caudal3, caudal4, caudal5, caudal6, caudal7, caudal8)
 
       # Guardar los valores de diámetro en una variable
       diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8 = diametros_asignados
 
       # Imprimir los valores de diámetro guardados en las variables
-      print(f"El diámetro nominal asignado para caudal1 es: {diametro1}")
-      print(f"El diámetro nominal asignado para caudal2 es: {diametro2}")
-      print(f"El diámetro nominal asignado para caudal3 es: {diametro3}")
-      print(f"El diámetro nominal asignado para caudal4 es: {diametro4}")
-      print(f"El diámetro nominal asignado para caudal5 es: {diametro5}")
-      print(f"El diámetro nominal asignado para caudal6 es: {diametro6}")
-      print(f"El diámetro nominal asignado para caudal7 es: {diametro7}")
-      print(f"El diámetro nominal asignado para caudal8 es: {diametro8}")
-      print()
+      st.write(f"El diámetro nominal asignado para caudal1 es: {diametro1}")
+      st.write(f"El diámetro nominal asignado para caudal2 es: {diametro2}")
+      st.write(f"El diámetro nominal asignado para caudal3 es: {diametro3}")
+      st.write(f"El diámetro nominal asignado para caudal4 es: {diametro4}")
+      st.write(f"El diámetro nominal asignado para caudal5 es: {diametro5}")
+      st.write(f"El diámetro nominal asignado para caudal6 es: {diametro6}")
+      st.write(f"El diámetro nominal asignado para caudal7 es: {diametro7}")
+      st.write(f"El diámetro nominal asignado para caudal8 es: {diametro8}")
+      st.write()
 
       def asignar_diametro_interno(diametros_nominales):
-
           resultados = []
 
           for d1 in diametros_nominales:
@@ -184,13 +191,8 @@ def LALA():
               elif d1 == "14":
                   ID = 0.3333
               elif d1 == "16":
-                  ID = 0.381
-              elif d1 == "18":
-                  ID = 0.4287
-              elif d1 == "20":
-                  ID = 0.4778
-              elif d1 == "24":
-                  ID = 0.5746
+                  ID = 0.
+
               else:
                   ID = "Indefinido"
 
@@ -200,24 +202,26 @@ def LALA():
 
 
 
+      # Obtener los valores de diámetro interno
       diametros_nominales = [diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8]
       diametros_internos = asignar_diametro_interno(diametros_nominales)
-      # Guardar los valores de diámetro interno en una variable
-      ID1,ID2,ID3,ID4,ID5,ID6,ID7,ID8 = diametros_internos
 
-      # Imprimir los valores de diámetro guardados en las variables
-      print(f"El diámetro interno para caudal1 es: {ID1}""mts")
-      print(f"El diámetro interno para caudal2 es: {ID2}""mts")
-      print(f"El diámetro interno para caudal3 es: {ID3}""mts")
-      print(f"El diámetro interno para caudal4 es: {ID4}""mts")
-      print(f"El diámetro interno para caudal5 es: {ID5}""mts")
-      print(f"El diámetro interno para caudal6 es: {ID6}""mts")
-      print(f"El diámetro interno para caudal7 es: {ID7}""mts")
-      print(f"El diámetro interno para caudal8 es: {ID8}""mts")
-      print()
+      # Guardar los valores de diámetro interno en variables individuales
+      ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8 = diametros_internos
 
-      print("Con todos estos valores se calculan los caudales reales de cada rama, para eso se hace uso del método de Hardy Cross")
-      print()
+      # Imprimir los valores de diámetro interno
+      st.write(f"El diámetro interno para caudal1 es: {ID1} mts")
+      st.write(f"El diámetro interno para caudal2 es: {ID2} mts")
+      st.write(f"El diámetro interno para caudal3 es: {ID3} mts")
+      st.write(f"El diámetro interno para caudal4 es: {ID4} mts")
+      st.write(f"El diámetro interno para caudal5 es: {ID5} mts")
+      st.write(f"El diámetro interno para caudal6 es: {ID6} mts")
+      st.write(f"El diámetro interno para caudal7 es: {ID7}""mts")
+      st.write(f"El diámetro interno para caudal8 es: {ID8}""mts")
+      st.write()
+
+      st.write("Con todos estos valores se calculan los caudales reales de cada rama, para eso se hace uso del método de Hardy Cross")
+      st.write()
 
       def calcular_area_diametro(diametro):
           radio = diametro / 2

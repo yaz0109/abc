@@ -40,8 +40,7 @@ def main():
       L8 = 33
 
 
-      # Mostrar los valores en forma de tabla
-      st.table(data)
+
       # Definir la velocidad constante
       velocidad = 1.5
       # Declarar los valores para gravedad, rugosidad, y viscosidad

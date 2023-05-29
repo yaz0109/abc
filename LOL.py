@@ -79,13 +79,13 @@ def main():
       st.write("Q7 =", Q7,"m3/s")
       st.write("Q8 =", Q8,"m3/s")
       st.write()
-      
+
       # Mostrar los valores asignados
       st.write("Valores de longitud de cada sección de tubería, diametro en función al caudal de alimentación:")
       data = {
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],
-      "Caudal (m^3/s)": [L1, L2, L3, L4, L5, L6, L7, L8],
+      "Caudal (m^3/s)": [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8],
 
             }
     

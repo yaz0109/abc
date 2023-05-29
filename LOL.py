@@ -1083,6 +1083,50 @@ def main():
           PU2 = ((PJ / y) + U - J - (hLUJ)) * y
 
       # CONVERSION A PSI
-      
+
+
+      st.write("PA =", PA / 6894.76)
+      st.write("PAB =", PB / 6894.76)
+      st.write("PBC =", PC / 6894.76)
+      st.write("PCD =", PD / 6894.76)
+      st.write()
+
+      st.write("PEF =", PF / 6894.76)
+      st.write("PFG =", PG / 6894.76)
+      st.write("PGH =", PH / 6894.76)
+      st.write("PHI =", PI / 6894.76)
+      st.write("PIJ =", PJ / 6894.76)
+      st.write()
+
+      st.write("PJK =", PK / 6894.76)
+      st.write("PKL =", PL / 6894.76)
+      st.write("PLM =", PM / 6894.76)
+      st.write()
+
+      st.write("PMN =", PN / 6894.76)
+      st.write("PNO =", PO / 6894.76)
+      st.write("POP =", PP / 6894.76)
+      st.write("PPQ =", PQ / 6894.76)
+      st.write("PQR =", PR / 6894.76)
+      st.write("PRS =", PS / 6894.76)
+      st.write("PST =", PT / 6894.76)
+      st.write("PTU =", PU / 6894.76)
+      st.write()
+
+      st.write("PUZ =", PZ / 6894.76)
+      st.write()
+
+      st.write("PUV =", PV / 6894.76)
+      st.write("PVX =", PX / 6894.76)
+      st.write("PXY =", PY / 6894.76)
+      st.write("PYW =", PW / 6894.76)
+      st.write("PWE =", PE2 / 6894.76)
+      st.write()
+
+      st.write("PZA =", PZ2 / 6894.76)
+      st.write()
+      st.write("PUJ =", PU2 / 6894.76)
+      st.write()
+
 if __name__ == "__main__":
     main()

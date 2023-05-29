@@ -14,6 +14,9 @@ def INTRODUCCION():
     st.write("La red que tenemos en este diseño, consta de material de acero, diámetros ajustables, longitudes y alturas definidas." )
     st.write("El objetivo es que quien entienda y haga uso del sistema, pueda agregar las especificaciones pertinentes, que le atribuirán un diseño de tuberías optimo; todo ello en función del caudal de alimentación desde el nodo A, por ende, las respectivas descargas en nodos J, M, U y Z. Asignando también la energía total por unidad de peso del fluido (agua e 25 a 60 °C), HGL de alimentación ") 
 
+    st.subheader('Hardy Cross')
+    st.write("Este método consiste en el análisis de un sistema de tuberías empleando procedimiento de iteraciones. Para la aplicación de este método se requiere realizar un balance global de masa y un balance de pérdidas en cada circuito igualado a cero.")
+    
     col1, col2 = st.columns(2)
     col1.subheader('Columna 1')
     col1.write('Contenido de la columna 1')

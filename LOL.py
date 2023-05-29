@@ -27,7 +27,7 @@ def main():
       # Solicitar al usuario el valor de QA (caudal de alimentación)
       QA = st.number_input("Ingrese el valor de QA (caudal de alimentación): ", step= 0.00001)
       st.write()
-      st.write(QA,"m3/s")
+      st.write(QA,"m^3/s")
                
       #DATOS
       # Declarar las variables de longitud de tuberías

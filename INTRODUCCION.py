@@ -17,6 +17,9 @@ def INTRODUCCION():
     st.write("Este método consiste en el análisis de un sistema de tuberías empleando procedimiento de iteraciones. Para la aplicación de este método se requiere realizar un balance global de masa y un balance de pérdidas en cada circuito igualado a cero.")
     st.markdown("La biblioteca está ajustada y deseñada con el fin determinar la presión, HGL diámetro nominal, interno y tasas de flujo. Como se mostrara a continuación en la sección **PROGRAMA**.")
     
+    selected_color = st.color_picker('Selecciona un color')
+    st.write('Color seleccionado:', selected_color)
+
     col1, col2 = st.columns(2)
     col1.subheader('Columna 1')
     col1.write('Contenido de la columna 1')

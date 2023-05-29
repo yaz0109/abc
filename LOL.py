@@ -57,7 +57,7 @@ def main():
       st.write("HGL=",HGL,"m")     
       
       # Mostrar los valores asignados
-      st.write("Valores de longitud de tuberías, diametros nominal en función al caudal de alimentación:")
+      st.write("Valores de longitud de cada sección de tubería, diametro en función al caudal de alimentación:")
       data = {
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],

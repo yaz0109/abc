@@ -312,5 +312,406 @@ def main():
       Q6_I6=-1*Q6
 
 
+      #CIRCUITO 1 (signos)
+
+
+
+      Signo1=Q1_I1/(abs(Q1_I1))
+      Signo7=Q7_I7/(abs(Q7_I7))
+      Signo5=Q5_I5/(abs(Q5_I5))
+      Signo6=Q6_I6/(abs(Q6_I6))
+
+
+
+
+      # Calcular números de Raynolds
+      Nre1= (abs(Q1_I1*ID1))/(A1*v)
+      Nre7= (abs(Q7_I7*ID7))/(A7*v)
+      Nre5= (abs(Q5_I5*ID5))/(A5*v)
+      Nre6= (abs(Q6_I6*ID6))/(A6*v)
+
+      # Calcular el factor de fricción fT
+
+      fT1 = (0.25 / (math.log10(1 / (3.7 * D_e_1) + 5.74 / (Nre1 ** 0.9))) ** 2)
+      fT7 = (0.25 / (math.log10(1 / (3.7 * D_e_7) + 5.74 / (Nre7 ** 0.9))) ** 2)
+      fT5 = (0.25 / (math.log10(1 / (3.7 * D_e_5) + 5.74 / (Nre5 ** 0.9))) ** 2)
+      fT6 = (0.25 / (math.log10(1 / (3.7 * D_e_6) + 5.74 / (Nre6 ** 0.9))) ** 2)
+
+      K1 = Codo1*kcodo*fT1 * (1 / (2 * g * A1 ** 2)) +kválvula*fT1 * (1 / (2 * g * A1 ** 2)) +fT1 * (L1 / ID1) * (1 / (2 * g * A1 ** 2))
+      K7 = Codo7*kcodo*fT7 * (1 / (2 * g * A7 ** 2)) +fT7 * (L7 / ID7) * (1 / (2 * g * A7 ** 2))
+      K5 = Codo5*kcodo*fT5 * (1 / (2 * g * A5 ** 2)) +kválvula*fT5 * (1 / (2 * g * A5 ** 2)) +fT5 * (L5 / ID5) * (1 / (2 * g * A5 ** 2))
+      K6 = Codo6*kcodo*fT6 * (1 / (2 * g * A6 ** 2)) +fT6 * (L6 / ID6) * (1 / (2 * g * A6 ** 2))
+
+
+
+
+
+      # Calcular de hL de los tubos, considerando el sentido del flujo
+
+      hL1=K1*(Q1_I1**2)*Signo1
+      hL7=K7*(Q7_I7**2)*Signo7
+      hL5=K5*(Q5_I5**2)*Signo5
+      hL6=K6*(Q6_I6**2)*Signo6
+
+
+
+
+      # Calcular de 2kQ de los tubos, sin considerar el signo
+
+      kQ1=2*K1*abs(Q1_I1)
+      kQ7=2*K7*abs(Q7_I7)
+      kQ5=2*K5*abs(Q5_I5)
+      kQ6=2*K6*abs(Q6_I6)
+
+
+
+
+      # Calcular de deltaQ CIRCUITO 1
+
+      SUMAhL1=hL1+hL7+hL5+hL6
+      SUMA2kQ1=kQ1+kQ7+kQ5+kQ6
+
+      DeltaQ1=(SUMAhL1/SUMA2kQ1)
+
+
+
+
+      Q1_I1=Q1_I1-DeltaQ1
+      Q7_I7=Q7_I7-DeltaQ1
+      Q5_I5=Q5_I5-DeltaQ1
+      Q6_I6=Q6_I6-DeltaQ1
+
+
+
+
+
+      #CIRCUITO 2
+      Q2_I2=Q2
+      Q7_I7_2=Q7
+      Q8_I8=-1*Q8
+
+
+
+
+      #CIRCUITO 2 (signos)
+      Signo2=Q2_I2/(abs(Q2_I2))
+      Signo7=Q7_I7_2/(abs(Q7_I7_2))
+      Signo8=Q8_I8/(abs(Q8_I8))
+
+
+
+
+      # Calcular números de Raynolds
+      Nre2= (abs(Q2_I2*ID2))/(A2*v)
+      Nre7= (abs(Q7_I7_2*ID7))/(A7*v)
+      Nre8= (abs(Q8_I8*ID8))/(A8*v)
+
+
+      # Calcular el factor de fricción fT
+
+      fT2 = (0.25 / (math.log10(1 / (3.7 * D_e_2) + 5.74 / (Nre2 ** 0.9))) ** 2)
+      fT7 = (0.25 / (math.log10(1 / (3.7 * D_e_7) + 5.74 / (Nre7 ** 0.9))) ** 2)
+      fT8 = (0.25 / (math.log10(1 / (3.7 * D_e_8) + 5.74 / (Nre8 ** 0.9))) ** 2)
+
+
+      K2 = Codo2*kcodo*fT2 * (1 / (2 * g * A2 ** 2)) +fT2 * (L2 / ID2) * (1 / (2 * g * A2 ** 2))
+      K7 = Codo7*kcodo*fT7 * (1 / (2 * g * A7 ** 2)) +fT7 * (L7 / ID7) * (1 / (2 * g * A7 ** 2))
+      K8 = Codo8*kcodo*fT8 * (1 / (2 * g * A8 ** 2)) +kválvula*fT8 * (1 / (2 * g * A8 ** 2)) +fT8 * (L8 / ID8) * (1 / (2 * g * A8 ** 2))
+
+
+
+
+
+      # Calcular de hL de los tubos, considerando el sentido del flujo
+
+      hL2=K2*(Q2_I2**2)*Signo2
+      hL7=K7*(Q7_I7_2**2)*Signo7
+      hL8=K8*(Q8_I8**2)*Signo8
+
+
+
+      # Calcular de 2kQ de los tubos, sin considerar el signo
+
+      kQ2=2*K2*abs(Q2_I2)
+      kQ7=2*K7*abs(Q7_I7_2)
+      kQ8=2*K8*abs(Q8_I8)
+
+
+
+      # Calcular de deltaQ CIRCUITO 2
+
+      SUMAhL1=hL2+hL7+hL8
+      SUMA2kQ1=kQ2+kQ7+kQ8
+
+      DeltaQ2=(SUMAhL1/SUMA2kQ1)
+
+      Q2_I2=Q2_I2-DeltaQ2
+      Q7_I7_2=Q7_I7_2-DeltaQ2
+      Q8_I8=Q8_I8-DeltaQ2
+
+
+
+      #CIRCUITO 3
+      Q3_I3=Q3
+      Q8_I8_2=Q8
+      Q4_I4=-1*Q4
+
+
+
+      #CIRCUITO 3 (signos)
+      Signo3=Q3_I3/(abs(Q3_I3))
+      Signo8=Q8_I8_2/(abs(Q8_I8_2))
+      Signo4=Q4_I4/(abs(Q4_I4))
+
+
+
+      # Calcular números de Raynolds
+      Nre3= (abs(Q3_I3*ID3))/(A3*v)
+      Nre8= (abs(Q8_I8_2*ID8))/(A8*v)
+      Nre4= (abs(Q4_I4*ID4))/(A4*v)
+
+
+      # Calcular el factor de fricción fT
+
+      fT3 = (0.25 / (math.log10(1 / (3.7 * D_e_3) + 5.74 / (Nre3 ** 0.9))) ** 2)
+      fT8 = (0.25 / (math.log10(1 / (3.7 * D_e_8) + 5.74 / (Nre8 ** 0.9))) ** 2)
+      fT4 = (0.25 / (math.log10(1 / (3.7 * D_e_4) + 5.74 / (Nre4 ** 0.9))) ** 2)
+
+
+      K3 = Codo3*kcodo*fT3 * (1 / (2 * g * A3 ** 2)) +fT3 * (L3 / ID3) * (1 / (2 * g * A3 ** 2))
+      K8 = Codo8*kcodo*fT8 * (1 / (2 * g * A8 ** 2)) +kválvula*fT8 * (1 / (2 * g * A8 ** 2))+fT8 * (L8 / ID8) * (1 / (2 * g * A8 ** 2))
+      K4 = Codo4*kcodo*fT4 * (1 / (2 * g * A4 ** 2)) +kválvula*fT4 * (1 / (2 * g * A4 ** 2)) +fT4 * (L4 / ID4) * (1 / (2 * g * A4 ** 2))
+
+
+
+
+
+      # Calcular de hL de los tubos, considerando el sentido del flujo
+
+      hL3=K3*(Q3_I3**2)*Signo3
+      hL8=K8*(Q8_I8_2**2)*Signo8
+      hL4=K4*(Q4_I4**2)*Signo4
+
+
+
+      # Calcular de 2kQ de los tubos, sin considerar el signo
+
+      kQ3=2*K3*abs(Q3_I3)
+      kQ8=2*K8*abs(Q8_I8_2)
+      kQ4=2*K4*abs(Q4_I4)
+
+
+
+      # Calcular de deltaQ CIRCUITO 3
+
+      SUMAhL1=hL3+hL8+hL4
+      SUMA2kQ1=kQ3+kQ8+kQ4
+
+      DeltaQ3=(SUMAhL1/SUMA2kQ1)
+
+      Q3_I3=Q3_I3-DeltaQ3
+      Q8_I8_2=Q8_I8_2-DeltaQ3
+      Q4_I4=Q4_I4-DeltaQ3
+
+
+
+
+      #Caudales comunes
+
+      Q7_I7=Q7_I7+DeltaQ2
+      Q7_I7_2=Q7_I7_2+DeltaQ1
+      Q8_I8=Q8_I8+DeltaQ3
+      Q8_I8_2=Q8_I8_2+DeltaQ2
+
+
+
+      #PORCENTAJES DE ERROR
+
+      Chg1=(DeltaQ1/(Q1_I1+DeltaQ1))*100
+      Chg2=(DeltaQ2/(Q2_I2+DeltaQ2))*100
+      Chg3=(DeltaQ3/(Q3_I3+DeltaQ3))*100
+      Chg4=(DeltaQ3/(Q4_I4+DeltaQ3))*100
+      Chg5=(DeltaQ1/(Q5_I5+DeltaQ1))*100
+      Chg6=(DeltaQ1/(Q6_I6+DeltaQ1))*100
+      Chg7=(DeltaQ1/(Q7_I7+DeltaQ1-DeltaQ2))*100
+      Chg7_2=(DeltaQ2/(Q7_I7_2+DeltaQ2-DeltaQ1))*100
+      Chg8=(DeltaQ2/(Q8_I8+DeltaQ2-DeltaQ3))*100
+      Chg8_2=(DeltaQ3/(Q8_I8_2+DeltaQ3-DeltaQ2))*100
+
+
+
+
+
+      #ITERACIÓN 2,3,4... (COPIAR CAUDALES ANTERIORES SOLAMENTE)
+
+      iteracion = 2
+      while iteracion <= 21:
+
+          # Resto del código...
+
+          #CIRCUITO 1 (signos)
+
+          Signo1=Q1_I1/(abs(Q1_I1))
+          Signo7=Q7_I7/(abs(Q7_I7))
+          Signo5=Q5_I5/(abs(Q5_I5))
+          Signo6=Q6_I6/(abs(Q6_I6))
+
+          # Calcular números de Raynolds
+          Nre1= (abs(Q1_I1*ID1))/(A1*v)
+          Nre7= (abs(Q7_I7*ID7))/(A7*v)
+          Nre5= (abs(Q5_I5*ID5))/(A5*v)
+          Nre6= (abs(Q6_I6*ID6))/(A6*v)
+
+          # Calcular el factor de fricción fT
+
+          fT1 = (0.25 / (math.log10(1 / (3.7 * D_e_1) + 5.74 / (Nre1 ** 0.9))) ** 2)
+          fT7 = (0.25 / (math.log10(1 / (3.7 * D_e_7) + 5.74 / (Nre7 ** 0.9))) ** 2)
+          fT5 = (0.25 / (math.log10(1 / (3.7 * D_e_5) + 5.74 / (Nre5 ** 0.9))) ** 2)
+          fT6 = (0.25 / (math.log10(1 / (3.7 * D_e_6) + 5.74 / (Nre6 ** 0.9))) ** 2)
+
+          K1 = Codo1*kcodo*fT1 * (1 / (2 * g * A1 ** 2)) +kválvula*fT1 * (1 / (2 * g * A1 ** 2)) +fT1 * (L1 / ID1) * (1 / (2 * g * A1 ** 2))
+          K7 = Codo7*kcodo*fT7 * (1 / (2 * g * A7 ** 2)) +fT7 * (L7 / ID7) * (1 / (2 * g * A7 ** 2))
+          K5 = Codo5*kcodo*fT5 * (1 / (2 * g * A5 ** 2)) +kválvula*fT5 * (1 / (2 * g * A5 ** 2)) +fT5 * (L5 / ID5) * (1 / (2 * g * A5 ** 2))
+          K6 = Codo6*kcodo*fT6 * (1 / (2 * g * A6 ** 2)) +fT6 * (L6 / ID6) * (1 / (2 * g * A6 ** 2))
+
+          # Calcular de hL de los tubos, considerando el sentido del flujo
+
+          hL1=K1*(Q1_I1**2)*Signo1
+          hL7=K7*(Q7_I7**2)*Signo7
+          hL5=K5*(Q5_I5**2)*Signo5
+          hL6=K6*(Q6_I6**2)*Signo6
+
+          # Calcular de 2kQ de los tubos, sin considerar el signo
+
+          kQ1=2*K1*abs(Q1_I1)
+          kQ7=2*K7*abs(Q7_I7)
+          kQ5=2*K5*abs(Q5_I5)
+          kQ6=2*K6*abs(Q6_I6)
+
+          # Calcular de deltaQ CIRCUITO 1
+
+          SUMAhL1=hL1+hL7+hL5+hL6
+          SUMA2kQ1=kQ1+kQ7+kQ5+kQ6
+
+          DeltaQ1=(SUMAhL1/SUMA2kQ1)
+
+          Q1_I1=Q1_I1-DeltaQ1
+          Q7_I7=Q7_I7-DeltaQ1
+          Q5_I5=Q5_I5-DeltaQ1
+          Q6_I6=Q6_I6-DeltaQ1
+
+          #CIRCUITO 2
+
+          #CIRCUITO 2 (signos)
+          Signo2=Q2_I2/(abs(Q2_I2))
+          Signo7=Q7_I7_2/(abs(Q7_I7_2))
+          Signo8=Q8_I8/(abs(Q8_I8))
+
+          # Calcular números de Raynolds
+          Nre2= (abs(Q2_I2*ID2))/(A2*v)
+          Nre7= (abs(Q7_I7_2*ID7))/(A7*v)
+          Nre8= (abs(Q8_I8*ID8))/(A8*v)
+
+          # Calcular el factor de fricción fT
+
+          fT2 = (0.25 / (math.log10(1 / (3.7 * D_e_2) + 5.74 / (Nre2 ** 0.9))) ** 2)
+          fT7 = (0.25 / (math.log10(1 / (3.7 * D_e_7) + 5.74 / (Nre7 ** 0.9))) ** 2)
+          fT8 = (0.25 / (math.log10(1 / (3.7 * D_e_8) + 5.74 / (Nre8 ** 0.9))) ** 2)
+
+          K2 = Codo2*kcodo*fT2 * (1 / (2 * g * A2 ** 2)) +fT2 * (L2 / ID2) * (1 / (2 * g * A2 ** 2))
+          K7 = Codo7*kcodo*fT7 * (1 / (2 * g * A7 ** 2)) +fT7 * (L7 / ID7) * (1 / (2 * g * A7 ** 2))
+          K8 = Codo8*kcodo*fT8 * (1 / (2 * g * A8 ** 2)) +kválvula*fT8 * (1 / (2 * g * A8 ** 2)) +fT8 * (L8 / ID8) * (1 / (2 * g * A8 ** 2))
+
+          # Calcular de hL de los tubos, considerando el sentido del flujo
+
+          hL2 = K2 * (Q2_I2 ** 2) * Signo2
+          hL7 = K7 * (Q7_I7_2 ** 2) * Signo7
+          hL8 = K8 * (Q8_I8 ** 2) * Signo8
+
+          # Calcular de 2kQ de los tubos, sin considerar el signo
+
+          kQ2=2*K2*abs(Q2_I2)
+          kQ7=2*K7*abs(Q7_I7_2)
+          kQ8=2*K8*abs(Q8_I8)
+
+          # Calcular de deltaQ CIRCUITO 2
+
+          SUMAhL1=hL2+hL7+hL8
+          SUMA2kQ1=kQ2+kQ7+kQ8
+
+          DeltaQ2=(SUMAhL1/SUMA2kQ1)
+
+          Q2_I2=Q2_I2-DeltaQ2
+          Q7_I7_2=Q7_I7_2-DeltaQ2
+          Q8_I8=Q8_I8-DeltaQ2
+
+          #CIRCUITO 3
+
+          #CIRCUITO 3 (signos)
+          Signo3=Q3_I3/(abs(Q3_I3))
+          Signo8=Q8_I8_2/(abs(Q8_I8_2))
+          Signo4=Q4_I4/(abs(Q4_I4))
+
+          # Calcular números de Raynolds
+          Nre3= (abs(Q3_I3*ID3))/(A3*v)
+          Nre8= (abs(Q8_I8_2*ID8))/(A8*v)
+          Nre4= (abs(Q4_I4*ID4))/(A4*v)
+
+          # Calcular el factor de fricción fT
+
+          fT3 = (0.25 / (math.log10(1 / (3.7 * D_e_3) + 5.74 / (Nre3 ** 0.9))) ** 2)
+          fT8 = (0.25 / (math.log10(1 / (3.7 * D_e_8) + 5.74 / (Nre8 ** 0.9))) ** 2)
+          fT4 = (0.25 / (math.log10(1 / (3.7 * D_e_4) + 5.74 / (Nre4 ** 0.9))) ** 2)
+
+          K3 = Codo3*kcodo*fT3 * (1 / (2 * g * A3 ** 2)) +fT3 * (L3 / ID3) * (1 / (2 * g * A3 ** 2))
+          K8 = Codo8*kcodo*fT8 * (1 / (2 * g * A8 ** 2)) +kválvula*fT8 * (1 / (2 * g * A8 ** 2))+fT8 * (L8 / ID8) * (1 / (2 * g * A8 ** 2))
+          K4 = Codo4*kcodo*fT4 * (1 / (2 * g * A4 ** 2)) +kválvula*fT4 * (1 / (2 * g * A4 ** 2)) +fT4 * (L4 / ID4) * (1 / (2 * g * A4 ** 2))
+
+          # Calcular de hL de los tubos, considerando el sentido del flujo
+
+          hL3=K3*(Q3_I3**2)*Signo3
+          hL8=K8*(Q8_I8_2**2)*Signo8
+          hL4=K4*(Q4_I4**2)*Signo4
+
+          # Calcular de 2kQ de los tubos, sin considerar el signo
+
+          kQ3=2*K3*abs(Q3_I3)
+          kQ8=2*K8*abs(Q8_I8_2)
+          kQ4=2*K4*abs(Q4_I4)
+
+          # Calcular de deltaQ CIRCUITO 3
+
+          SUMAhL1=hL3+hL8+hL4
+          SUMA2kQ1=kQ3+kQ8+kQ4
+
+          DeltaQ3=(SUMAhL1/SUMA2kQ1)
+
+          Q3_I3=Q3_I3-DeltaQ3
+          Q8_I8_2=Q8_I8_2-DeltaQ3
+          Q4_I4=Q4_I4-DeltaQ3
+
+          #Caudales comunes
+
+          Q7_I7=Q7_I7+DeltaQ2
+          Q7_I7_2=Q7_I7_2+DeltaQ1
+          Q8_I8=Q8_I8+DeltaQ3
+          Q8_I8_2=Q8_I8_2+DeltaQ2
+
+          #PORCENTAJES DE ERROR
+
+          Chg1=(DeltaQ1/(Q1_I1+DeltaQ1))*100
+          Chg2=(DeltaQ2/(Q2_I2+DeltaQ2))*100
+          Chg3=(DeltaQ3/(Q3_I3+DeltaQ3))*100
+          Chg4=(DeltaQ3/(Q4_I4+DeltaQ3))*100
+          Chg5=(DeltaQ1/(Q5_I5+DeltaQ1))*100
+          Chg6=(DeltaQ1/(Q6_I6+DeltaQ1))*100
+          Chg7=(DeltaQ1/(Q7_I7+DeltaQ1-DeltaQ2))*100
+          Chg7_2=(DeltaQ2/(Q7_I7_2+DeltaQ2-DeltaQ1))*100
+          Chg8=(DeltaQ2/(Q8_I8+DeltaQ2-DeltaQ3))*100
+          Chg8_2=(DeltaQ3/(Q8_I8_2+DeltaQ3-DeltaQ2))*100
+
+      # Actualizar el valor de iteracion
+          iteracion += 1
+
 if __name__ == "__main__":
     main()

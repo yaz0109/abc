@@ -744,5 +744,18 @@ def main():
       st.write()
 
 
+      #DIRECCIONES
+
+      #SIGNOS DE CAUDALES SEGÚN CONVENCIÓN
+
+      SQ1=1
+      SQ2=1
+      SQ3=1
+      SQ4=-1
+      SQ5=-1
+      SQ6=-1
+      SQ7=-1
+      SQ8=-1
+      
 if __name__ == "__main__":
     main()

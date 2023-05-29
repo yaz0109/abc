@@ -95,31 +95,7 @@ def main():
       # Mostrar los valores en forma de tabla
       st.table(data)
       st.write("Los valores que de caudales supuestos que se reportan luego de hacer el cálculo, son signo negativo, se deben a que fueron modificados respecto al sentido de flujo que se predestino en el diagrama.")  
- # Calcular las variables establecidas
-      Q6 = QA * 0.35
-      Q7 = QA * 0.5
-      Q8 = Q6 * 0.35
-
-      # Sustituir en los demás caudales
-      Q1 = QA - Q6
-      Q2 = QA - Q6 + Q7
-      Q3 = (3/4) * QA + Q8 + Q7 - Q6
-      Q4 = Q6 - Q7 - Q8 - (1/2) * QA
-      Q5 = Q6 - (1/4) * QA
-
-
-      # Imprimir los resultados
-      st.write("Variables establecidas:")
-      st.write("Q1 =", Q1,"m3/s")
-      st.write("Q2 =", Q2,"m3/s")
-      st.write("Q3 =", Q3,"m3/s")
-      st.write("Q4 =", Q4,"m3/s")
-      st.write("Q5 =", Q5,"m3/s")
-      st.write("Q6 =", Q6,"m3/s")
-      st.write("Q7 =", Q7,"m3/s")
-      st.write("Q8 =", Q8,"m3/s")
-      st.write()
-
+ 
 
       def asignar_diametro(*caudales):
           data = [

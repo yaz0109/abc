@@ -143,14 +143,7 @@ def main():
       diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8 = diametros_asignados
 
       # Imprimir los valores de diámetro guardados en las variables
-      st.write(f"El diámetro nominal asignado para caudal1 es: {diametro1}")
-      st.write(f"El diámetro nominal asignado para caudal2 es: {diametro2}")
-      st.write(f"El diámetro nominal asignado para caudal3 es: {diametro3}")
-      st.write(f"El diámetro nominal asignado para caudal4 es: {diametro4}")
-      st.write(f"El diámetro nominal asignado para caudal5 es: {diametro5}")
-      st.write(f"El diámetro nominal asignado para caudal6 es: {diametro6}")
-      st.write(f"El diámetro nominal asignado para caudal7 es: {diametro7}")
-      st.write(f"El diámetro nominal asignado para caudal8 es: {diametro8}")
+
       st.write()
 
       def asignar_diametro_interno(diametros_nominales):
@@ -205,8 +198,6 @@ def main():
 
           return resultados
 
-
-
       # Obtener los valores de diámetro interno
       diametros_nominales = [diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8]
       diametros_internos = asignar_diametro_interno(diametros_nominales)
@@ -215,14 +206,7 @@ def main():
       ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8 = diametros_internos
 
       # Imprimir los valores de diámetro interno
-      st.write(f"El diámetro interno para caudal1 es: {ID1} mts")
-      st.write(f"El diámetro interno para caudal2 es: {ID2} mts")
-      st.write(f"El diámetro interno para caudal3 es: {ID3} mts")
-      st.write(f"El diámetro interno para caudal4 es: {ID4} mts")
-      st.write(f"El diámetro interno para caudal5 es: {ID5} mts")
-      st.write(f"El diámetro interno para caudal6 es: {ID6} mts")
-      st.write(f"El diámetro interno para caudal7 es: {ID7}""mts")
-      st.write(f"El diámetro interno para caudal8 es: {ID8}""mts")
+
       st.write()
 
       # Mostrar los valores asignados

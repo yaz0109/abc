@@ -1,7 +1,9 @@
 import math
 import streamlit as st
 import pandas as pd
-import numpy as 
+import numpy as
+
+def(Calculador)
 
 print("RED DE TUBERÍAS")
 print()

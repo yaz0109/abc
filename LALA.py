@@ -4,27 +4,30 @@ import numpy as np
 import pandas as pd
 
 def LALA():
-      print("RED DE TUBERÍAS")
-      print()
-      print("Aquí, se proporciona un croquis isométrico de la red de tuberías como ayuda visual."
-            " Sin embargo, se necesitan algunas especificaciones para estas tuberías y "
-            "esta es la situación de diseño que debe enfrentar  un ingeniero.	")
-      print()
 
-      print("El objetivo de la red es suministrar agua en cuatro puntos  "
+      st.write("RED DE TUBERÍAS")
+      st.write()
+      st.write("Aquí, se proporciona un croquis isométrico de la red de tuberías como ayuda visual."
+            " Sin embargo, se necesitan algunas especificaciones para estas tuberías y "
+            "esta es la situación de diseño que debe enfrentar  un ingeniero.")
+      st.write()
+
+      st.write("El objetivo de la red es suministrar agua en cuatro puntos  "
             "diferentes de una gran planta de proceso como parte de los servicios. "
             "Se han ideado unas válvulas de compuerta en la red, como se muestra, "
             "para que se pueda cortar el suministro en cualquiera de los cuatro puntos diferentes.")
-      print()
+      st.write()
 
-      print(" Se estableció la disposición de la red de tuberías al considerar "
+      st.write(" Se estableció la disposición de la red de tuberías al considerar "
             "el equipo de proceso instalado, los soportes mecánicos de tubería "
             "plausibles y la seguridad. "
             "Sin embargo, no se determinaron los tamaños de las tuberías.")
-      print()
+      st.write()
+
       # Solicitar al usuario el valor de QA (caudal de alimentación)
-      QA = float(input("Ingrese el valor de QA (caudal de alimentación): "))
-      print()
+      QA = st.number_input("Ingrese el valor de QA (caudal de alimentación): ")
+      st.write()
+
       #DATOS
       # Declarar las variables de longitud de tuberías
       L1 = 74
@@ -43,27 +46,21 @@ def LALA():
       v= 1.085000E-06  # en m^2/s
 
       # Solicitar al usuario el valor de HGL en metros
-      HGL = float(input("Ingrese el valor de HGL de alimentación (en metros): "))
-
-      # Imprimir los valores declarados0.583146667
-      print("Valor de rugosidad:",e, "metros")
-      print("Valor de HGL:", HGL, "metros")
-      print("Valor de viscosidad:",v, "m^2/s")
-      print("Valor de gravedad:",g, "m/s^2")
-
+      HGL = st.number_input("Ingrese el valor de HGL de alimentación (en metros): ")
 
       # Mostrar los valores asignados
-      print("Valores de longitud de tuberías:")
-      print("L1 =", L1,"mts")
-      print("L2 =", L2,"mts")
-      print("L3 =", L3,"mts")
-      print("L4 =", L4,"mts")
-      print("L5 =", L5,"mts")
-      print("L6 =", L6,"mts")
-      print("L7 =", L7,"mts")
-      print("L8 =", L8,"mts")
-      print()
-      # Calcular las variables establecidas
+      st.write("Valores de longitud de tuberías:")
+      st.write("L1 =", L1,"mts")
+      st.write("L2 =", L2,"mts")
+      st.write("L3 =", L3,"mts")
+      st.write("L4 =", L4,"mts")
+      st.write("L5 =", L5,"mts")
+      st.write("L6 =", L6,"mts")
+      st.write("L7 =", L7,"mts")
+      st.write("L8 =", L8,"mts")
+      st.write()
+      # Calcular las variables estable
+
       Q6 = QA * 0.35
       Q7 = QA * 0.5
       Q8 = Q6 * 0.35

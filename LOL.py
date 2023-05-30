@@ -831,7 +831,16 @@ def main():
       else:
           st.write("Dirección de Q8: JU")
 
+      data = {
+        "Sección": ["1", "2", "3", "4", "5", "6", "7", "8"],
+      "Caudal (m^3/s)": ["{:.8f}".format(Q1_I1), "{:.8f}".format(Q2_I2), "{:.8f}".format(Q3_3), "{:.8f}".format(Q4_4), "{:.8f}".format(Q5_5), "{:.8f}".format(Q6_6), "{:.8f}".format(Q7_7), "{:.8f}".format(Q8_8)],
+      "Diámetro (m)": [ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8],
+      "ND (m)": [diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8],
 
+            }
+    
+      # Mostrar los valores en forma de tabla
+      st.table(data)
 
       #CÁLCULO DE HGL
       st.write("Considerando el punto de alimentación como la altura = 0 m")

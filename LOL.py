@@ -30,10 +30,10 @@ def main():
       # Solicitar al usuario el valor de QA (caudal de alimentación)
       QA = st.number_input("Ingrese el valor de QA (caudal de alimentación): ", step= 0.00001)
       st.write()
-      st.write("QA=",QA,"L/min")
+      st.write("QA=",QA,"m^3/s")
       # Solicitar al usuario el valor de HGL en metros
       HGL = st.number_input("Ingrese el valor de HGL de alimentación (en metros): ")
-      QA= QA/6000
+      
       st.write("HGL=",HGL,"m") 
                
       #DATOS
@@ -97,7 +97,7 @@ def main():
       data = {
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],
-      "Caudal (L/min)": ["{:.8f}".format(Q1*6000), "{:.8f}".format(Q2*6000), "{:.8f}".format(Q3*6000), "{:.8f}".format(Q4*6000), "{:.8f}".format(Q5*6000), "{:.8f}".format(Q6*6000), "{:.8f}".format(Q7*6000), "{:.8f}".format(Q8*6000)],
+      "Caudal (m^3/s)": ["{:.8f}".format(Q1), "{:.8f}".format(Q2), "{:.8f}".format(Q3), "{:.8f}".format(Q4), "{:.8f}".format(Q5), "{:.8f}".format(Q6), "{:.8f}".format(Q7), "{:.8f}".format(Q8)],
 
             }
     
@@ -226,7 +226,7 @@ def main():
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],
       "Caudal (m^3/s)": ["{:.8f}".format(Q1), "{:.8f}".format(Q2), "{:.8f}".format(Q3), "{:.8f}".format(Q4), "{:.8f}".format(Q5), "{:.8f}".format(Q6), "{:.8f}".format(Q7), "{:.8f}".format(Q8)],
-      "Diámetro (mm)": [ID1*1000, ID2*1000, ID3*1000, ID4*1000, ID5*1000, ID6*1000, ID7*1000, ID8*1000],
+      "Diámetro (m)": [ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8],
       "ND (in)": [diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8],
 
             }

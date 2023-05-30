@@ -236,7 +236,7 @@ def main():
 
       st.write("Con todos estos valores se calculan los caudales reales de cada rama, para eso se hace uso del método de Hardy Cross")
       st.write()
-      
+
       def calcular_area_diametro(diametro):
           radio = diametro / 2
           area = math.pi * (radio ** 2)
@@ -252,7 +252,7 @@ def main():
       A7 = calcular_area_diametro(ID7)
       A8 = calcular_area_diametro(ID8)
 
-      st.write("Áreas de los diámetros:")
+      st.write("Áreas transversales:")
       st.write("Tubo 1:", A1,"mts^2")
       st.write("Tubo 2:", A2,"mts^2")
       st.write("Tubo 3:", A3,"mts^2")
@@ -263,9 +263,6 @@ def main():
       st.write("Tubo 8:", A8,"mts^2")
       st.write()
        
-
-      
-
      #Codos
 
       Codo1=3

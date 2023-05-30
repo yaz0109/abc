@@ -287,7 +287,7 @@ def main():
          }
 
         # Mostrar los valores en forma de tabla
-      st.table(data)
+        st.table(data)
       #HARDY CROSS
       
 
@@ -780,10 +780,7 @@ def main():
       SQ7=-1
       SQ8=-1
        
-      data {
-        
-    
-      }
+
       # Q1
       if Q1_I1 * SQ1 > 0:
           st.write("Dirección de Q1: AE")

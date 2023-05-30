@@ -728,8 +728,7 @@ def main():
       # Actualizar el valor de iteracion
           iteracion += 1
             
-      st.markdown(f"<h2 style='text-align: center;'>{iteracion} de respuestas</h2>", unsafe_allow_html=True)
-      st.markdown("<h4 style='text-align: center;'>Tablas de respuestas</h4>", unsafe_allow_html=True)
+      st.markdown(f"<h2 style='text-align: center;'>ITERACIÓN{iteracion} </h2>", unsafe_allow_html=True)
       st.write()
       st.write("ITERACIÓN", iteracion)
       st.write()

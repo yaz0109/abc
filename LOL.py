@@ -856,7 +856,7 @@ def main():
     
       # Mostrar los valores en forma de tabla
       st.table(data)
-
+      st.write("Para los valores que indican el flujo por medio del signo, en caso de corregirse al incialmente definido, se maneja la columna dirección la cuál evalua el caudal para definir el sentido correcto (este se determina como todo lo demás).")
       #CÁLCULO DE HGL
       st.write("Considerando el punto de alimentación como la altura = 0 m")
       st.write()

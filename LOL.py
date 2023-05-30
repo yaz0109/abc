@@ -559,7 +559,7 @@ def main():
 
       #ITERACIÓN 2,3,4... (COPIAR CAUDALES ANTERIORES SOLAMENTE)
       iteracion = 2
-      while iteracion <= 100:
+      while iteracion <= 99:
 
 
           # Resto del código...
@@ -728,9 +728,7 @@ def main():
       # Actualizar el valor de iteracion
           iteracion += 1
             
-      st.markdown(f"<h2 style='text-align: center;'>ITERACIÓN{iteracion} </h2>", unsafe_allow_html=True)
-      st.write()
-      st.write("ITERACIÓN", iteracion)
+      st.markdown(f"<h4 style='text-align: center;'>ITERACIÓN {iteracion} </h4>", unsafe_allow_html=True)
       st.write()
 
       # CAUDALES FINALES

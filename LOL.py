@@ -299,8 +299,9 @@ def main():
       st.write("6.- Determinar la corrección para el caudal, renombrarlo y continuar con la siguiente iteración.")
       st.write("7.- En caso de tener un caudal en más de un circuito usar la corrección común para caudal total de este.")
       st.write()
-      st.write("Tabla de respuestas")
-      st.markdown("<h2 style='text-align: center;'>Tabla de respuestas</h2>", unsafe_allow_html=True)
+      
+      st.markdown("<h4 style='text-align: center;'>Tabla de respuestas</h4>", unsafe_allow_html=True)
+      st.write()S
       
       # Cálculo de D/e
       D_e_1 = ID1/e

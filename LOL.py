@@ -280,14 +280,9 @@ def main():
       kcodo=30
       kválvula=8
 
-      data = {
-        "k codo": ["30 fT"],
-        "k válvula ": ["8 fT"],
 
-         }
 
-        # Mostrar los valores en forma de tabla
-      st.table(data)
+       
       #HARDY CROSS
       
 
@@ -303,6 +298,14 @@ def main():
       st.write("2.- Calcular el valor respectivo de número de Raynolds, con las dimensiones, el caudal y la viscosidad del fluido.")
       st.write("3.- Obtener el valor de factor de fricción para el respectivo tubo.")
       st.write("4.- Realizar la operación que ayuda a determinar la pérdida de fricción K del tubo. Se sabe que en cada ramal existen accesorios, tanto codos como válvulas, para aquellos que tienen dichos artículos se asignan.")
+      data = {
+        "k codo": ["30 fT"],
+        "k válvula ": ["8 fT"],
+
+         }
+      # Mostrar los valores en forma de tabla
+      st.table(data)
+      st.write()
       st.write("5.- Con el valor K, tabular el hL del tubo.")
       st.write("6.- Determinar la corrección para el caudal, renombrarlo y continuar con la siguiente iteración.")
       st.write("7.- En caso de tener un caudal en más de un circuito usar la corrección común para caudal total de este.")

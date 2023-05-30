@@ -1268,9 +1268,9 @@ def main():
       st.write()
       data = {
         "Sección": ["AB", "BC", "CD", "DE", "EF", "FG", "GH", "HI","IJ","JK","KL","LM","MN","NO","OP","PQ","QR","RS","ST","TU","UZ","UV","VX","XY","YW","WE","ZA","UJ"],
-        "Presión (N/m^2)": [B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, Z, V, X, Y, W, E, Z, J],
-        "Presión (psi)":[AB, BC, CD, DE, EF, FG, GH, HI, IJ, JK, KL, LM, MN, NO, OP, PQ, QR, RS, ST, TU, UZ, UV, VX, XY, YW, WE, ZA, UJ],
-        "HGL": [abs(hLAB), abs(hLBC), abs(hLCD), abs(hLDE), abs(hLEF), abs(hLFG), abs(hLGH), abs(hLHI),abs(hLIJ), abs(hLJK), abs(hLKL), abs(hLLM), abs(hLMN), abs(hLNO), abs(hLOP), abs(hLPQ),abs(hLQR), abs(hLRS), abs(hLST), abs(hLTU), abs(hLUZ), abs(hLUV), abs(hLVX), abs(hLXY),abs(hLYW), abs(hLWE), abs(hLZA), abs(hLUJ)]
+        "Presión (N/m^2)": [PB, PC, PD, PE, PF, PG, PH, PI, PJ, PK, PL, PM, PN, PO, PP, PQ, PR, PS, PT, PU, PZ, PV, PX, PY, PW, PE, PZ, PJ],
+        "Presión (psi)":[PB/6894.76, PC/6894.76, PD/6894.76, PE/6894.76, PF/6894.76, PG/6894.76, PH/6894.76, PI/6894.76, PJ/6894.76, PK/6894.76, PL/6894.76, PM/6894.76, PN/6894.76, PO/6894.76, PP/6894.76, PQ/6894.76, PR/6894.76, PS/6894.76, PTV/6894.76, PU/6894.76, PZ/6894.76, PV/6894.76, PX/6894.76, PY/6894.76, PW/6894.76, PE/6894.76, PZ/6894.76, PJ/6894.76],
+        "HGL": [HGLB, HGLC, HGLD, HGLE, HGLF, HGLG, HGLH, HGLI, HGLJ, HGLK, HGLL, HGLM, HGLN, HGLO, HGLP, HGLQ, HGLR, HGLS, HGLT, HGLU, HGLZ, HGLV, HGLX, HGLY, HGLW, HGLE, HGLZ, HGLJ]
 
             }
 

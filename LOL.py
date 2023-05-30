@@ -301,7 +301,7 @@ def main():
       st.write()
       
       st.markdown("<h4 style='text-align: center;'>Tabla de respuestas</h4>", unsafe_allow_html=True)
-      st.write()W
+      st.write()
       
       # Cálculo de D/e
       D_e_1 = ID1/e

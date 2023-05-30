@@ -282,7 +282,7 @@ def main():
 
        data = {
         "k codo": ["30 fT"],
-      "k válvula ": ["8 fT"],
+        "k válvula ": ["8 fT"],
             }
       #HARDY CROSS
       

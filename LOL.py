@@ -227,7 +227,7 @@ def main():
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],
       "Caudal (m^3/s)": ["{:.8f}".format(Q1), "{:.8f}".format(Q2), "{:.8f}".format(Q3), "{:.8f}".format(Q4), "{:.8f}".format(Q5), "{:.8f}".format(Q6), "{:.8f}".format(Q7), "{:.8f}".format(Q8)],
       "Diámetro (m)": [ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8],
-      "ND (m)": [diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8],
+      "ND (in)": [diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8],
 
             }
     

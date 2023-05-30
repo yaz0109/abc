@@ -9,8 +9,8 @@ def LOL():
       st.write()
       st.markdown("<h3 style='text-align: center;'>RED DE TUBERÍAS</h3>", unsafe_allow_html=True)
       st.write()
-      image_red = "https://i.pinimg.com/564x/55/ab/fc/55abfc7f7bd7c1140aa9a87a40e9dd47.jpg"
-      st.image(image_red, width=150, use_column_width=True, caption=".")
+      st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/55/ab/fc/55abfc7f7bd7c1140aa9a87a40e9dd47.jpg' alt='Imagen centrada' style='width: 300px; height: 200px;'></div>", unsafe_allow_html=True)
+     
       st.write("Aquí, se proporciona un croquis isométrico de la red de tuberías como ayuda visual."
             " Sin embargo, se necesitan algunas especificaciones para estas tuberías y "
             "esta es la situación de diseño que debe enfrentar  un ingeniero.")

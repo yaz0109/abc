@@ -4,7 +4,7 @@ import pandas as pd
 import math
 import INTRODUCCION as io
 import LOL as la
-import ESPECIFICACIOES as ef
+import ESPECIFICACIONES as ef
 import FUENTES as fb
 
 

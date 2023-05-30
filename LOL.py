@@ -218,7 +218,7 @@ def main():
 
       st.write()
 
-        def calcular_area_diametro(diametro):
+      def calcular_area_diametro(diametro):
                 radio = diametro / 2
                 area = math.pi * (radio ** 2)
                 return area
@@ -253,7 +253,7 @@ def main():
       "Diámetro (m)": [ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8],
       "ND (m)": [diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8],
       "ND (m)": [A1, A2, A3, A4, A5, ],
-      
+
             }
     
       # Mostrar los valores en forma de tabla

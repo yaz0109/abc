@@ -27,11 +27,17 @@ def ESPECIFICACIONES ():
     st.write ("El diseño de la red de tubería tiene variaciones en la elevación por ende será necesario cambiar la dirección del flujo del fluido para ella (según el libro de Crane). Accesorios: Los acoplamientos o accesorios para conexión se clasifican en: de derivación, reducción, ampliación y desviación. Los accesorios como tes, cruces, codos con salida lateral, etc., pueden agruparse como accesorios de derivación. Los conectores de reducción o ampliación son aquellos que cambian la superficie de paso del fluido. En esta clase están las reducciones y los manguitos. Los accesorios de desvío, curvas, codos, curvas en D, etc., son los que cambian la dirección de flujo. Se pueden combinar algunos de los accesorios de la clasificación general antes mencionada. Además, hay accesorios como conexiones y uniones que no son resistentes al flujo, motivo por el cual no se consideran aquí.")
     st.write () 
     st.markdown(f"<h3    style='text-align: center;'> ¿Por qué se usan Válvulas de compuerta? </h3>", unsafe_allow_html=True)
-
-
-
-
-
+    st.write ("Las válvulas de compuerta son una opción común para controlar el flujo en tuberías debido a las siguientes ventajas:")
+    st.write ("1.	Bajo costo: Las válvulas de compuerta son relativamente económicas en comparación con otros tipos de válvulas de control de flujo.") 
+    st.write ("2.	Bajo coeficiente de pérdida de carga: Las válvulas de compuerta tienen una pérdida de carga baja cuando están completamente abiertas, lo que significa que la resistencia al flujo es mínima y se requiere menos energía para transportar el fluido a través de la tubería.") 
+    st.write ("3.	Alta capacidad de flujo: Las válvulas de compuerta tienen una abertura de paso completa y, por lo tanto, ofrecen una alta capacidad de flujo.") 
+    st.write ("4.	Sellado efectivo: Las válvulas de compuerta están diseñadas para proporcionar un sellado efectivo contra el flujo no deseado en ambos sentidos, lo que las hace útiles en aplicaciones donde se requiere un alto grado de control de flujo.") 
+    st.write ("5.	Durabilidad: Las válvulas de compuerta están diseñadas para soportar altas presiones y temperaturas, lo que las hace adecuadas para aplicaciones en tuberías de alta presión y alta temperatura.") 
+    st.write ("6.	Facilidad de operación: Las válvulas de compuerta son fáciles de operar y se pueden abrir y cerrar con poco esfuerzo. Además, no requieren un dispositivo de retención de posicionamiento para mantener su posición abierta o cerrada.") 
+    st.write ()
+    st.write (st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/ef/7f/26/ef7f26964e8fdb8f999e4cff787ba8b2.jpg' alt='Imagen centrada' style='width: 300px; height: 200px;'></div>", unsafe_allow_html=True))
+     
+    st.write (" figura 2-1 muestra dos tramos de tubería del mismo diámetro y longitud. El tramo superior contiene una válvula de globo. Si las pérdidas de presión API y AP2 se miden entre los puntos indicados, se encuentra que API es mayor que AP2.") 
 
 
 

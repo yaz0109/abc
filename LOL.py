@@ -210,7 +210,7 @@ def main():
       st.write()
 
       # Mostrar los valores asignados
-      st.write("Valores de longitud de cada sección de tubería, diametro en función al caudal de alimentación, obtenidos de tablas tomando como criterio de diseño una velocidad constante para el agua (aproximadamente 1.5 m/s):")
+      st.write("Valores de longitud de cada sección de tubería, diametro en función al caudal de alimentación, obtenidos de tablas tomando como criterio de diseño una velocidad constante para el agua (aproximadamente 1.5 m/s).")
       data = {
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],
@@ -276,8 +276,8 @@ def main():
       
 
       st.write("Cálculo de los caudales reales:")
-      st.write("Para el cálculo de los nuevos caudales se realiza un proceso iterativo donde se incluye ajustar los valores iniciales para caudal a través de una corrección")
-      st.write("gracias al cálculo de los hL (pérdidas del tubo correspondiente), igualando la suma de aquellos a 0:")
+      st.write("Para el cálculo de los nuevos caudales se realiza un proceso iterativo donde se incluye ajustar los valores iniciales para caudal a través de una corrección gracias al cálculo de los hL (pérdidas del tubo correspondiente), igualando la suma de aquellos a 0.")
+      
 
       # ITERACIONES
 

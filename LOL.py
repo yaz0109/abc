@@ -27,6 +27,8 @@ def main():
       st.write()
       st.markdown("<h4 style='text-align: center;'>Datos de entrada</h4>", unsafe_allow_html=True)
       st.write()   
+      st.write("(Siempre ingrese los valores de entrada de principio como recomendación para mejor análisis de los datos y que la app empiece a calcular).")
+      st.write()  
       # Solicitar al usuario el valor de QA (caudal de alimentación)
       QA = st.number_input("Ingrese el valor de QA (caudal de alimentación): ", step= 0.00001)
       st.write()

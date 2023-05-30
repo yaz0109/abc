@@ -1261,9 +1261,9 @@ def main():
       st.write()
       data = {
         "Sección": ["AB", "BC", "CD", "DE", "EF", "FG", "GH", "HI","IJ","JK","KL","LM","MN","NO","OP","PQ","QR","RS","ST","TU","UZ","UV","VX","XY","YW","WE","ZA","UJ"],
-        "Altura (m)": [B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, Z, V, X, Y, W, E, Z, J],
-        "Longitud (m)":[AB, BC, CD, DE, EF, FG, GH, HI, IJ, JK, KL, LM, MN, NO, OP, PQ, QR, RS, ST, TU, UZ, UV, VX, XY, YW, WE, ZA, UJ],
-        "hL (m)": [abs(hLAB), abs(hLBC), abs(hLCD), abs(hLDE), abs(hLEF), abs(hLFG), abs(hLGH), abs(hLHI),abs(hLIJ), abs(hLJK), abs(hLKL), abs(hLLM), abs(hLMN), abs(hLNO), abs(hLOP), abs(hLPQ),abs(hLQR), abs(hLRS), abs(hLST), abs(hLTU), abs(hLUZ), abs(hLUV), abs(hLVX), abs(hLXY),abs(hLYW), abs(hLWE), abs(hLZA), abs(hLUJ)]
+        "Presión (N/m^2)": [B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, Z, V, X, Y, W, E, Z, J],
+        "Presión (psi)":[AB, BC, CD, DE, EF, FG, GH, HI, IJ, JK, KL, LM, MN, NO, OP, PQ, QR, RS, ST, TU, UZ, UV, VX, XY, YW, WE, ZA, UJ],
+        "HGL": [abs(hLAB), abs(hLBC), abs(hLCD), abs(hLDE), abs(hLEF), abs(hLFG), abs(hLGH), abs(hLHI),abs(hLIJ), abs(hLJK), abs(hLKL), abs(hLLM), abs(hLMN), abs(hLNO), abs(hLOP), abs(hLPQ),abs(hLQR), abs(hLRS), abs(hLST), abs(hLTU), abs(hLUZ), abs(hLUV), abs(hLVX), abs(hLXY),abs(hLYW), abs(hLWE), abs(hLZA), abs(hLUJ)]
 
             }
 

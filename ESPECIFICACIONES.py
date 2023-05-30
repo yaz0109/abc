@@ -23,6 +23,7 @@ def ESPECIFICACIONES ():
     st.write ("La razón por la que la cédula 40 es tan común en tuberías de acero es porque tiene un equilibrio ideal entre resistencia y costo. Es lo suficientemente gruesa como para soportar la presión y el peso necesarios para muchas aplicaciones, pero no es tan gruesa que resulte prohibitivamente costosa.")
     st.write ("Además, la cédula 40 es compatible con muchos accesorios de tubería estándar, lo que facilita la instalación y el mantenimiento. También es comúnmente utilizada en aplicaciones de tubería que requieren una presión moderada, como en sistemas de agua y gas.")
     st.markdown(f"<h3    style='text-align: center;'> ¿Por qué se usan codos? </h3>", unsafe_allow_html=True)
+    st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/06/ef/c8/06efc875f59a0428d9f5b10a96b2a900.jpg' alt='Imagen centrada' style='width: 400px; height: 300px;'></div>", unsafe_allow_html=True)
     st.write ()
     st.write ("El diseño de la red de tubería tiene variaciones en la elevación por ende será necesario cambiar la dirección del flujo del fluido para ella (según el libro de Crane). Accesorios: Los acoplamientos o accesorios para conexión se clasifican en: de derivación, reducción, ampliación y desviación. Los accesorios como tes, cruces, codos con salida lateral, etc., pueden agruparse como accesorios de derivación. Los conectores de reducción o ampliación son aquellos que cambian la superficie de paso del fluido. En esta clase están las reducciones y los manguitos. Los accesorios de desvío, curvas, codos, curvas en D, etc., son los que cambian la dirección de flujo. Se pueden combinar algunos de los accesorios de la clasificación general antes mencionada. Además, hay accesorios como conexiones y uniones que no son resistentes al flujo, motivo por el cual no se consideran aquí.")
     st.write () 
@@ -43,6 +44,7 @@ def ESPECIFICACIONES ():
     st.write (" figura 2-1 muestra dos tramos de tubería del mismo diámetro y longitud. El tramo superior contiene una válvula de globo. Si las pérdidas de presión API y AP2 se miden entre los puntos indicados, se encuentra que API es mayor que AP2.") 
     st.write ()
     st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/d2/69/c4/d269c44ca95ddc1f966b792038ce0d4f.jpg' alt='Imagen centrada' style='width: 400px; height: 300px;'></div>", unsafe_allow_html=True)
+    st.write ()
     st.write ("La cantidad de presión que un tubo de acero de cédula 40 puede soportar dependerá de varios factores, como el diámetro y la longitud del tubo, así como la temperatura y el tipo de fluido que se está transportando a través de la tubería. En general, se puede decir que un tubo de acero de cédula 40 puede soportar una presión máxima de alrededor de 2,500 psi (libras por pulgada cuadrada) para aplicaciones de agua y alrededor de 7,000 psi para aplicaciones de gas. Sin embargo, es importante tener en cuenta que estos valores son solo una guía general y que la presión máxima real que puede soportar el tubo dependerá de muchos otros factores.")
     st.write ()
     

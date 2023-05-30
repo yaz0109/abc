@@ -25,7 +25,7 @@ def FUENTES():
     st.write ()
     st.write ()
     st.write ()
-    st.write ("El código tiene un fin didáctico, gracias a las herramientas proporcionadas por EXCEL, ID de PyCharm así como las herramientas de los repositorios Github.dev fue posible habilitar este problema aplicado y ajustado a el usuario para el mayor de los aprendizajes posibles.")
+    st.write ("El código tiene un fin didáctico, gracias a las herramientas proporcionadas por EXCEL, ID de PyCharm así como las herramientas de los repositorios Github.dev fue posible habilitar este problema aplicado y ajustado a el usuario para el mayor de los aprendizajes y objetivos.")
     st.write ("Esperamos que la aplicación haya cumplido tus expectativas.")
     st.write ("Agradecemos la ayuda proporcionada por conocedores de la materia, tanto para ello como el curso cumpleto de MECÁNICA DE FLUIDOS.")
 if __name__ == '__main__':

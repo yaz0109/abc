@@ -786,65 +786,65 @@ def main():
       # Q1
       if Q1_I1 * SQ1 > 0:
           st.write("Dirección de Q1: AE")
-          D1=AE
+          D1="AE"
       else:
           st.write("Dirección de Q1: EA")
-          D1=EA
+          D1="EA"
       # Q2
       if Q2_I2 * SQ2 > 0:
           st.write("Dirección de Q2: EJ")
-          D2=EJ
+          D2="EJ"
       else:
           st.write("Dirección de Q2: JE")
-          D2=JE
+          D2="JE"
 
       # Q3
       if Q3_I3 * SQ3 > 0:
           st.write("Dirección de Q3: JM")
-          D3=JM
+          D3="JM"
       else:
           st.write("Dirección de Q3: MJ")
-          D3=MJ
+          D3="MJ"
 
       # Q4
       if Q4_I4 * SQ4 > 0:
           st.write("Dirección de Q4: UM")
-          D4=UM
+          D4="UM"
       else:
           st.write("Dirección de Q4: MU")
-          D4=MU
+          D4="MU"
 
       # Q5
       if Q5_I5 * SQ5 > 0:
           st.write("Dirección de Q5: ZU")
-          D5=ZU
+          D5="ZU"
       else:
           st.write("Dirección de Q5: UZ")
-          D5=UZ
+          D5="UZ"
 
       # Q6
       if Q6_I6 * SQ6 > 0:
           st.write("Dirección de Q6: AZ")
-          D6=AZ
+          D6="AZ"
       else:
           st.write("Dirección de Q6: ZA")
-          D6=ZA
+          D6="ZA"
 
       # Q7
       if Q7_I7 * SQ7 > 0:
           st.write("Dirección de Q7: UE")
-          D7=UE
+          D7="UE"
       else:
           st.write("Dirección de Q7: EU")
-          D7=EU
+          D7="EU"
 
       # Q8
       if Q8_I8 * SQ8 > 0:
           st.write("Dirección de Q8: UJ")
-          D8=UJ
+          D8="UJ"
       else:
           st.write("Dirección de Q8: JU")
-          D8=JU
+          D8="JU"
 
       data = {
         "Sección": ["1", "2", "3", "4", "5", "6", "7", "8"],

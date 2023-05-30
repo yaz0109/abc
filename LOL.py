@@ -97,7 +97,7 @@ def main():
       data = {
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],
       "Longitud (m)": [L1, L2, L3, L4, L5, L6, L7, L8],
-      "Caudal (m^3/s)": ["{:.8f}".format(Q1*6000), "{:.8f}".format(Q2*6000), "{:.8f}".format(Q3*6000), "{:.8f}".format(Q4*6000), "{:.8f}".format(Q5*6000), "{:.8f}".format(Q6*6000), "{:.8f}".format(Q7*6000), "{:.8f}".format(Q8*6000)],
+      "Caudal (L/min)": ["{:.8f}".format(Q1*6000), "{:.8f}".format(Q2*6000), "{:.8f}".format(Q3*6000), "{:.8f}".format(Q4*6000), "{:.8f}".format(Q5*6000), "{:.8f}".format(Q6*6000), "{:.8f}".format(Q7*6000), "{:.8f}".format(Q8*6000)],
 
             }
     

@@ -288,7 +288,7 @@ def main():
       
 
       # ITERACIONES
-      st.markdown("<h2 style='text-align: center;'>Instrucciones </h2>", unsafe_allow_html=True)
+      st.markdown("<h3 style='text-align: center;'>Instrucciones </h3>", unsafe_allow_html=True)
       st.write()
       st.write("Para la búsqueda de los caudales reales:")
       st.write("1.- Calcular los valores de los caudales en función al flujo.")
@@ -559,7 +559,7 @@ def main():
 
       #ITERACIÓN 2,3,4... (COPIAR CAUDALES ANTERIORES SOLAMENTE)
       iteracion = 2
-      while iteracion <= 21:
+      while iteracion <= 100:
 
 
           # Resto del código...
@@ -728,8 +728,9 @@ def main():
       # Actualizar el valor de iteracion
           iteracion += 1
             
-
-
+      st.markdown(f"<h2 style='text-align: center;'>{iteracion} de respuestas</h2>", unsafe_allow_html=True)
+      st.markdown("<h4 style='text-align: center;'>Tablas de respuestas</h4>", unsafe_allow_html=True)
+      st.write()
       st.write("ITERACIÓN", iteracion)
       st.write()
 

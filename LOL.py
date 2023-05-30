@@ -279,11 +279,11 @@ def main():
 
       kcodo=30
       kválvula=8
-      
+
        data = {
         "k codo": ["30 fT"],
       "k válvula ": ["8 fT"],
-       }
+            }
       #HARDY CROSS
       
 

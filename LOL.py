@@ -1227,6 +1227,9 @@ def main():
       st.write(HGLZ2)
       st.write(HGLU2)
 
+
+      st.write()
+      st.write("Esta primero tabla nos muestra información importante; se trata de determinar el caudal total que fluje por un conjunto delimitado de tuberia por puntos de bifurcacion descarga o alimentacion. Con ello es posible entonces calcular los datos por cada tubo independiente.") 
       st.markdown(f"<h5 style='text-align: center;'> Por sección de tubería </h5>", unsafe_allow_html=True)
       st.write()
 

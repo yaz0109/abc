@@ -1234,6 +1234,7 @@ def main():
       st.write()
 
       data = {
+        "Sección": ["AB", "BC", "CD", "DE", "EF", "FG", "GH", "HI","IJ","JK","KL","LM","MN","NO","OP","PQ","QR","RS","ST","TU","UZ","UV","VX","XY","YW","WE","ZA","UJ"],
         "Altura (m)": ["1", "2", "3", "4", "5", "6", "7", "8"],
         "Dirección flujo":[D1, D2, D3, D4, D5, D6, D7, D8],
         "Caudal (m^3/s)": ["{:.8f}".format(Q1_I1), "{:.8f}".format(Q2_I2), "{:.8f}".format(Q3_I3), "{:.8f}".format(Q4_I4), "{:.8f}".format(Q5_I5), "{:.8f}".format(Q6_I6), "{:.8f}".format(Q7_I7), "{:.8f}".format(Q8_I8)],
@@ -1245,36 +1246,7 @@ def main():
       # Mostrar los valores en forma de tabla
       st.table(data)
 
-      ## Alturas de cada punto
-
-    | Punto | Altura |
-    |-------|--------|
-    | A     | 0      |
-    | B     | 0      |
-    | C     | -13    |
-    | D     | -13    |
-    | E     | -13    |
-    | F     | -13    |
-    | G     | 12     |
-    | H     | 12     |
-    | I     | -5     |
-    | J     | -13    |
-    | K     | -13    |
-    | L     | -13    |
-    | M     | -29    |
-    | N     | -29    |
-    | O     | -13    |
-    | P     | -13    |
-    | Q     | -26    |
-    | R     | -26    |
-    | S     | -26    |
-    | T     | -26    |
-    | U     | -13    |
-    | Z     | -13    |
-    | V     | -13    |
-    | X     | -13    |
-    | Y     | -13    |
-    | W     | -13    |
+      
       
 if __name__ == "__main__":
     main()

@@ -841,7 +841,9 @@ def main():
         "hL (m)": [abs(hL1), abs(hL2), abs(hL3), abs(hL4), abs(hL5), abs(hL6), abs(hL7), abs(hL8)]
 
             }
-    
+
+      st.markdown(f"<h5 style='text-align: center;'> Por sección de tubería </h5>", unsafe_allow_html=True)
+      st.write()
       # Mostrar los valores en forma de tabla
       st.table(data)
       st.write("Para los valores que indican el flujo por medio del signo, en caso de corregirse al incialmente definido, se maneja la columna """"Dirección flujo"""" la cuál evalua el caudal para definir el sentido correcto (este se determina como todo lo demás).")

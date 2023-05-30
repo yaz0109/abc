@@ -252,7 +252,6 @@ def main():
       "Caudal (m^3/s)": ["{:.8f}".format(Q1), "{:.8f}".format(Q2), "{:.8f}".format(Q3), "{:.8f}".format(Q4), "{:.8f}".format(Q5), "{:.8f}".format(Q6), "{:.8f}".format(Q7), "{:.8f}".format(Q8)],
       "Diámetro (m)": [ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8],
       "ND (m)": [diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8],
-      "ND (m)": [A1, A2, A3, A4, A5, ],
 
             }
     
@@ -835,7 +834,18 @@ def main():
       else:
           st.write("Dirección de Q8: JU")
 
-      
+      data = {
+        "Sección de tubos": ["1", "2", "3", "4", "5", "6", "7", "8"],
+      "Caudal (m^3/s)": ["{:.8f}".format(Q1_I1), "{:.8f}".format(Q2_I2), "{:.8f}".format(Q3_I3), "{:.8f}".format(Q4_I4), "{:.8f}".format(Q5_I5), "{:.8f}".format(Q6_I6), "{:.8f}".format(Q7_I7), "{:.8f}".format(Q8_I8)],
+      "hL (m)": [ID1, ID2, ID3, ID4, ID5, ID6, ID7, ID8],
+      "ND (m)": [diametro1, diametro2, diametro3, diametro4, diametro5, diametro6, diametro7, diametro8],
+      "ND (m)": [A1, A2, A3, A4, A5, ],
+
+            }
+    
+      # Mostrar los valores en forma de tabla
+      st.table(data)
+
       #CÁLCULO DE HGL
       st.write("Considerando el punto de alimentación como la altura = 0 m")
       st.write()

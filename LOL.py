@@ -252,22 +252,22 @@ def main():
         A7 = calcular_area_diametro(ID7)
         A8 = calcular_area_diametro(ID8)
 
-       st.write("Áreas de los diámetros:")
-       st.write("Tubo 1:", A1,"mts^2")
-       st.write("Tubo 2:", A2,"mts^2")
-       st.write("Tubo 3:", A3,"mts^2")
-       st.write("Tubo 4:", A4,"mts^2")
-       st.write("Tubo 5:", A5,"mts^2")
-       st.write("Tubo 6:", A6,"mts^2")
-       st.write("Tubo 7:", A7,"mts^2")
-       st.write("Tubo 8:", A8,"mts^2")
-       st.write()
+        st.write("Áreas de los diámetros:")
+        st.write("Tubo 1:", A1,"mts^2")
+        st.write("Tubo 2:", A2,"mts^2")
+        st.write("Tubo 3:", A3,"mts^2")
+        st.write("Tubo 4:", A4,"mts^2")
+        st.write("Tubo 5:", A5,"mts^2")
+        st.write("Tubo 6:", A6,"mts^2")
+        st.write("Tubo 7:", A7,"mts^2")
+        st.write("Tubo 8:", A8,"mts^2")
+        st.write()
 
       
        
       
 
-            #Codos
+     #Codos
 
       Codo1=3
       Codo2=4

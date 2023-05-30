@@ -1147,7 +1147,8 @@ def main():
         "HGL": [HGL],
 
             }
-
+      # Mostrar los valores en forma de tabla
+      st.table(data)
 
       data = {
         "Sección": ["AB", "BC", "CD", "DE", "EF", "FG", "GH", "HI","IJ","JK","KL","LM","MN","NO","OP","PQ","QR","RS","ST","TU","UZ","UV","VX","XY","YW","WE","ZA","UJ"],

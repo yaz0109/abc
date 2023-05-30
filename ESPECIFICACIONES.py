@@ -29,7 +29,7 @@ def ESPECIFICACIONES ():
     st.write ("El diseño de la red de tubería tiene variaciones en la elevación por ende será necesario cambiar la dirección del flujo del fluido para ella (según el libro de Crane). Accesorios: Los acoplamientos o accesorios para conexión se clasifican en: de derivación, reducción, ampliación y desviación. Los accesorios como tes, cruces, codos con salida lateral, etc., pueden agruparse como accesorios de derivación. Los conectores de reducción o ampliación son aquellos que cambian la superficie de paso del fluido. En esta clase están las reducciones y los manguitos. Los accesorios de desvío, curvas, codos, curvas en D, etc., son los que cambian la dirección de flujo. Se pueden combinar algunos de los accesorios de la clasificación general antes mencionada. Además, hay accesorios como conexiones y uniones que no son resistentes al flujo, motivo por el cual no se consideran aquí.")
     st.write () 
     st.markdown(f"<h3    style='text-align: center;'> ¿Por qué se usan Válvulas de compuerta? </h3>", unsafe_allow_html=True)
-     st.write ()
+    st.write ()
     st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/4e/57/f4/4e57f477a95471f033d9516d52b07b99.jpg' alt='Imagen centrada' style='width: 300px; height: 200px;'></div>", unsafe_allow_html=True)
     st.write ("Las válvulas de compuerta son una opción común para controlar el flujo en tuberías debido a las siguientes ventajas:")
     st.write ("1.	Bajo costo: Las válvulas de compuerta son relativamente económicas en comparación con otros tipos de válvulas de control de flujo.") 

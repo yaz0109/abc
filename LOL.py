@@ -1020,7 +1020,7 @@ def main():
       hLC7=KC7*(abs(Q7_I7)**2)
       hLC8=KC8*(abs(Q8_I8)**2)
 
-      #PRESIONESSSSSS
+      #PRESIONES
       PA=(HGL*y)-A
 
       #PAE

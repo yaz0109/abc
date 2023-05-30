@@ -283,7 +283,11 @@ def main():
       data = {
         "k codo": ["30 fT"],
         "k válvula ": ["8 fT"],
+
             }
+
+        # Mostrar los valores en forma de tabla
+      st.table(data)
       #HARDY CROSS
       
 

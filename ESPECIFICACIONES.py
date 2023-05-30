@@ -38,10 +38,13 @@ def ESPECIFICACIONES ():
     st.markdown(f"<h3    style='text-align: center;'> Ubicaciones de los accesorios </h3>", unsafe_allow_html=True)
     st.write ("La ubicación del accesorio, en este caso las válvulas de compuerta tendrán la función de bloquear el flujo parcial o por completo del fluido, en su defecto modificando la presión para un propósito definido, para ello es necesario pues, que sean los más eficientes posibles colocando una en cada línea independiente a las otra. Las distancias de esté sobre la sección del tubo correspondiente no influirá en la eficiencia del sistema (a menos que hagamos cambiar el tamaño del tubo.")
     st.write ()
-
+    st.markdown(f"<h3    style='text-align: center;'> Presión </h3>", unsafe_allow_html=True)
+    st.write ()
     st.write (" figura 2-1 muestra dos tramos de tubería del mismo diámetro y longitud. El tramo superior contiene una válvula de globo. Si las pérdidas de presión API y AP2 se miden entre los puntos indicados, se encuentra que API es mayor que AP2.") 
-    st.write (st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/ef/7f/26/ef7f26964e8fdb8f999e4cff787ba8b2.jpg' alt='Imagen centrada' style='width: 400px; height: 300px;'></div>", unsafe_allow_html=True))
-    
+    st.write ()
+    st.write (st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/d2/69/c4/d269c44ca95ddc1f966b792038ce0d4f.jpg' alt='Imagen centrada' style='width: 400px; height: 300px;'></div>", unsafe_allow_html=True))
+    st.write ("La cantidad de presión que un tubo de acero de cédula 40 puede soportar dependerá de varios factores, como el diámetro y la longitud del tubo, así como la temperatura y el tipo de fluido que se está transportando a través de la tubería. En general, se puede decir que un tubo de acero de cédula 40 puede soportar una presión máxima de alrededor de 2,500 psi (libras por pulgada cuadrada) para aplicaciones de agua y alrededor de 7,000 psi para aplicaciones de gas. Sin embargo, es importante tener en cuenta que estos valores son solo una guía general y que la presión máxima real que puede soportar el tubo dependerá de muchos otros factores.")
+    st.write ()
     
      
     

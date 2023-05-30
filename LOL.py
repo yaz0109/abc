@@ -199,7 +199,13 @@ def main():
               elif d1 == "14":
                   ID = 0.3333
               elif d1 == "16":
-                  ID = 0.
+                  ID = 0.381
+              elif d1 == "18":
+                  ID = 0.4287
+              elif d1 == "20":
+                  ID = 0.4778
+              elif d1 == "24":
+                  ID = 0.5746   
 
               else:
                   ID = "Indefinido"

@@ -1130,7 +1130,35 @@ def main():
       # CONVERSION A PSI
 
       #CALCULO DE HGL
-
+      
+      HGLB=(PB/y)+B
+      HGLC=(PC/y)+C
+      HGLD=(PD/y)+D
+      HGLE=(PE/y)+E
+      HGLF=(PF/y)+F
+      HGLG=(PG/y)+G
+      HGLH=(PH/y)+H
+      HGLI=(PI/y)+I
+      HGLJ=(PJ/y)+J
+      HGLK=(PK/y)+K
+      HGLL=(PL/y)+L
+      HGLM=(PM/y)+M
+      HGLN=(PN/y)+N
+      HGLO=(PO/y)+O
+      HGLP=(PP/y)+P
+      HGLQ=(PQ/y)+Q
+      HGLR=(PR/y)+R
+      HGLS=(PS/y)+S
+      HGLT=(PT/y)+T
+      HGLU=(PU/y)+U
+      HGLZ=(PZ/y)+Z
+      HGLV=(PV/y)+V
+      HGLX=(PX/y)+X
+      HGLY=(PY/y)+Y
+      HGLW=(PW/y)+W
+      HGLE2=(PE2/y)+E
+      HGLZ2=(PZ2/y)+Z
+      HGLU2=(PU2/y)+U
 
       st.write()
       st.write("Esta primero tabla nos muestra información importante; se trata de determinar el caudal total que fluje por un conjunto delimitado de tuberia por puntos de bifurcacion descarga o alimentacion. Con ello es posible entonces calcular los datos por cada tubo independiente.") 

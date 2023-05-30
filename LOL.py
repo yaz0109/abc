@@ -1129,110 +1129,7 @@ def main():
 
       # CONVERSION A PSI
 
-
-      st.write("PA =", PA / 6894.76)
-      st.write("PAB =", PB / 6894.76)
-      st.write("PBC =", PC / 6894.76)
-      st.write("PCD =", PD / 6894.76)
-      st.write()
-
-      st.write("PEF =", PF / 6894.76)
-      st.write("PFG =", PG / 6894.76)
-      st.write("PGH =", PH / 6894.76)
-      st.write("PHI =", PI / 6894.76)
-      st.write("PIJ =", PJ / 6894.76)
-      st.write()
-
-      st.write("PJK =", PK / 6894.76)
-      st.write("PKL =", PL / 6894.76)
-      st.write("PLM =", PM / 6894.76)
-      st.write()
-
-      st.write("PMN =", PN / 6894.76)
-      st.write("PNO =", PO / 6894.76)
-      st.write("POP =", PP / 6894.76)
-      st.write("PPQ =", PpQ / 6894.76)
-      st.write("PQR =", PR / 6894.76)
-      st.write("PRS =", PS / 6894.76)
-      st.write("PST =", PT / 6894.76)
-      st.write("PTU =", PU / 6894.76)
-      st.write()
-
-      st.write("PUZ =", PZ / 6894.76)
-      st.write()
-
-      st.write("PUV =", PV / 6894.76)
-      st.write("PVX =", PX / 6894.76)
-      st.write("PXY =", PY / 6894.76)
-      st.write("PYW =", PW / 6894.76)
-      st.write("PWE =", PE2 / 6894.76)
-      st.write()
-
-      st.write("PZA =", PZ2 / 6894.76)
-      st.write()
-      st.write("PUJ =", PU2 / 6894.76)
-      st.write()
-
       #CALCULO DE HGL
-
-      HGLB=(PB/y)+B
-      HGLC=(PC/y)+C
-      HGLD=(PD/y)+D
-      HGLE=(PE/y)+E
-      HGLF=(PF/y)+F
-      HGLG=(PG/y)+G
-      HGLH=(PH/y)+H
-      HGLI=(PI/y)+I
-      HGLJ=(PJ/y)+J
-      HGLK=(PK/y)+K
-      HGLL=(PL/y)+L
-      HGLM=(PM/y)+M
-      HGLN=(PN/y)+N
-      HGLO=(PO/y)+O
-      HGLP=(PP/y)+P
-      HGLQ=(PpQ/y)+Q
-      HGLR=(PR/y)+R
-      HGLS=(PS/y)+S
-      HGLT=(PT/y)+T
-      HGLU=(PU/y)+U
-      HGLZ=(PZ/y)+Z
-      HGLV=(PV/y)+V
-      HGLX=(PX/y)+X
-      HGLY=(PY/y)+Y
-      HGLW=(PW/y)+W
-      HGLE2=(PE2/y)+E
-      HGLZ2=(PZ2/y)+Z
-      HGLU2=(PU2/y)+U
-
-
-      st.write(HGLB)
-      st.write(HGLC)
-      st.write(HGLD)
-      st.write(HGLE)
-      st.write(HGLF)
-      st.write(HGLG)
-      st.write(HGLH)
-      st.write(HGLI)
-      st.write(HGLJ)
-      st.write(HGLK)
-      st.write(HGLL)
-      st.write(HGLM)
-      st.write(HGLN)
-      st.write(HGLO)
-      st.write(HGLP)
-      st.write(HGLQ)
-      st.write(HGLR)
-      st.write(HGLS)
-      st.write(HGLT)
-      st.write(HGLU)
-      st.write(HGLZ)
-      st.write(HGLV)
-      st.write(HGLX)
-      st.write(HGLY)
-      st.write(HGLW)
-      st.write(HGLE2)
-      st.write(HGLZ2)
-      st.write(HGLU2)
 
 
       st.write()
@@ -1274,6 +1171,8 @@ def main():
 
             }
 
+      st.write("Considerando el punto de alimentación como el origen tabulamos y reportamos los datos:")
+      st.write()
       
       # Mostrar los valores en forma de tabla
       st.table(data)

@@ -1167,7 +1167,7 @@ def main():
       data = {
         "Sección": ["AB", "BC", "CD", "DE", "EF", "FG", "GH", "HI","IJ","JK","KL","LM","MN","NO","OP","PQ","QR","RS","ST","TU","UZ","UV","VX","XY","YW","WE","ZA","UJ"],
         "Presión (N/m^2)": [PB, PC, PD, PE, PF, PG, PH, PI, PJ, PK, PL, PM, PN, PO, PP, PpQ, PR, PS, PT, PU, PZ, PV, PX, PY, PW, PE, PZ, PJ],
-    
+        "Presión (psi)":[PB/6894.76, PC/6894.76, PD/6894.76, PE/6894.76, PF/6894.76, PG/6894.76, PH/6894.76, PI/6894.76, PJ/6894.76, PK/6894.76, PL/6894.76, PM/6894.76, PN/6894.76, PO/6894.76, PP/6894.76, PQ/6894.76, PR/6894.76, PS/6894.76, PTV/6894.76, PU/6894.76, PZ/6894.76, PV/6894.76, PX/6894.76, PY/6894.76, PW/6894.76, PE/6894.76, PZ/6894.76, PJ/6894.76],
 
             }
 

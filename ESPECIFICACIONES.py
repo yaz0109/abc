@@ -10,9 +10,6 @@ def ESPECIFICACIONES ():
     st.write ()
     st.markdown(f"<h3    style='text-align: center;'> Rugosidad </h3>", unsafe_allow_html=True)
     st.write ("Para los tubos y las tuberías disponibles comercialmente, el valor de diseño de la rugosidad promedio ε de la pared de la tubería se ha determinado como indica la tabla 8.2.")
-    
-    st.markdown("<div style='display: flex; justify-content: center;'><img src='https://ibb.co/6rQTCrr' alt='Imagen centrada' style='width: 300px; height: 200px;'></div>", unsafe_allow_html=True)
-    st.write () 
     st.markdown(f"<h3    style='text-align: center;'> ¿Por qué tubería de acero? </h3>", unsafe_allow_html=True)
     st.write ()
 

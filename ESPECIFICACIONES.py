@@ -42,7 +42,7 @@ def ESPECIFICACIONES ():
     st.write ()
     st.write (" figura 2-1 muestra dos tramos de tubería del mismo diámetro y longitud. El tramo superior contiene una válvula de globo. Si las pérdidas de presión API y AP2 se miden entre los puntos indicados, se encuentra que API es mayor que AP2.") 
     st.write ()
-    st.write (st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/d2/69/c4/d269c44ca95ddc1f966b792038ce0d4f.jpg' alt='Imagen centrada' style='width: 400px; height: 300px;'></div>", unsafe_allow_html=True))
+    st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/d2/69/c4/d269c44ca95ddc1f966b792038ce0d4f.jpg' alt='Imagen centrada' style='width: 400px; height: 300px;'></div>", unsafe_allow_html=True)
     st.write ("La cantidad de presión que un tubo de acero de cédula 40 puede soportar dependerá de varios factores, como el diámetro y la longitud del tubo, así como la temperatura y el tipo de fluido que se está transportando a través de la tubería. En general, se puede decir que un tubo de acero de cédula 40 puede soportar una presión máxima de alrededor de 2,500 psi (libras por pulgada cuadrada) para aplicaciones de agua y alrededor de 7,000 psi para aplicaciones de gas. Sin embargo, es importante tener en cuenta que estos valores son solo una guía general y que la presión máxima real que puede soportar el tubo dependerá de muchos otros factores.")
     st.write ()
     

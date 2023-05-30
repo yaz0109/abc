@@ -300,7 +300,7 @@ def main():
       st.write("7.- En caso de tener un caudal en más de un circuito usar la corrección común para caudal total de este.")
       st.write()
       
-      st.markdown("<h4 style='text-align: center;'>Tabla de respuestas</h4>", unsafe_allow_html=True)
+      st.markdown("<h4 style='text-align: center;'>Tablas de respuestas</h4>", unsafe_allow_html=True)
       st.write()
       
       # Cálculo de D/e

@@ -22,7 +22,7 @@ def FUENTES():
     st.write ()
     st.write ()
     st.write ()
-        st.write ()
+    st.write ()
     st.write ()
     st.write ()
     st.write ("El código tiene un fin didáctico, gracias a las herramientas proporcionadas por EXCEL, ID de PyCharm así como las herramientas de los repositorios Github.dev fue posible habilitar este problema aplicado y ajustado a el usuario para el mayor de los aprendizajes posibles.")

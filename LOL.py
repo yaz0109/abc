@@ -1242,8 +1242,7 @@ def main():
         "Sección": ["AB", "BC", "CD", "DE", "EF", "FG", "GH", "HI","IJ","JK","KL","LM","MN","NO","OP","PQ","QR","RS","ST","TU","UZ","UV","VX","XY","YW","WE","ZA","UJ"],
         "Altura (m)": [B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, Z, V, X, Y, W, E, Z, J],
         "Longitud (m)":[AB, BC, CD, DE, EF, FG, GH, HI, IJ, JK, KL, LM, MN, NO, OP, PQ, QR, RS, ST, TU, UZ, UV, VX, XY, YW, WE, ZA, UJ],
-        "Caudal (m^3/s)": ["{:.8f}".format(Q1_I1), "{:.8f}".format(Q2_I2), "{:.8f}".format(Q3_I3), "{:.8f}".format(Q4_I4), "{:.8f}".format(Q5_I5), "{:.8f}".format(Q6_I6), "{:.8f}".format(Q7_I7), "{:.8f}".format(Q8_I8)],
-        "hL (m)": [abs(hL1), abs(hL2), abs(hL3), abs(hL4), abs(hL5), abs(hL6), abs(hL7), abs(hL8)]
+        "hL (m)": [abs(hLAB), abs(hLBC), abs(hLCD), abs(hLDE), abs(hLEF), abs(hLFG), abs(hLGH), abs(hLHI),abs(hLIJ), abs(hLJK), abs(hLKL), abs(hLLM), abs(hLMN), abs(hLNO), abs(hLOP), abs(hLPQ),abs(hLQR), abs(hLRS), abs(hLST), abs(hLTU), abs(hLUZ), abs(hLUV), abs(hLVX), abs(hLXY),abs(hLYW), abs(hLWE), abs(hLZA), abs(hLUJ)]
 
             }
 

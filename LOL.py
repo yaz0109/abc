@@ -1064,8 +1064,8 @@ def main():
           PN = ((PM / y) + M - N + (hLMN + 1 / 7 * hLC4)) * y
           PO = ((PN / y) + N - O + (hLNO + 1 / 7 * hLC4)) * y
           PP = ((PO / y) + O - P + (hLOP + 1 / 7 * hLC4)) * y
-          PQ = ((PP / y) + P - Q + (hLPQ + 1 / 7 * hLC4)) * y
-          PR = ((PQ / y) + Q - R + (hLQR + 1 / 7 * hLC4)) * y
+          PpQ = ((PP / y) + P - Q + (hLPQ + 1 / 7 * hLC4)) * y
+          PR = ((PpQ / y) + Q - R + (hLQR + 1 / 7 * hLC4)) * y
           PS = ((PR / y) + R - S + (hLRS + 1 / 7 * hLC4)) * y
           PT = ((PS / y) + S - T + (hLST + 1 / 7 * hLC4)) * y
           PU = ((PT / y) + T - U + (hLTU)) * y
@@ -1074,8 +1074,8 @@ def main():
           PN = ((PM / y) + M - N - (hLMN + 1 / 7 * hLC4)) * y
           PO = ((PN / y) + N - O - (hLNO + 1 / 7 * hLC4)) * y
           PP = ((PO / y) + O - P - (hLOP + 1 / 7 * hLC4)) * y
-          PQ = ((PP / y) + P - Q - (hLPQ + 1 / 7 * hLC4)) * y
-          PR = ((PQ / y) + Q - R - (hLQR + 1 / 7 * hLC4)) * y
+          PpQ = ((PP / y) + P - Q - (hLPQ + 1 / 7 * hLC4)) * y
+          PR = ((PpQ / y) + Q - R - (hLQR + 1 / 7 * hLC4)) * y
           PS = ((PR / y) + R - S - (hLRS + 1 / 7 * hLC4)) * y
           PT = ((PS / y) + S - T - (hLST + 1 / 7 * hLC4)) * y
           PU = ((PT / y) + T - U - (hLTU)) * y
@@ -1144,7 +1144,7 @@ def main():
       st.write("PMN =", PN / 6894.76)
       st.write("PNO =", PO / 6894.76)
       st.write("POP =", PP / 6894.76)
-      st.write("PPQ =", PQ / 6894.76)
+      st.write("PPQ =", PpQ / 6894.76)
       st.write("PQR =", PR / 6894.76)
       st.write("PRS =", PS / 6894.76)
       st.write("PST =", PT / 6894.76)
@@ -1183,7 +1183,7 @@ def main():
       HGLN=(PN/y)+N
       HGLO=(PO/y)+O
       HGLP=(PP/y)+P
-      HGLQ=(PQ/y)+Q
+      HGLQ=(PpQ/y)+Q
       HGLR=(PR/y)+R
       HGLS=(PS/y)+S
       HGLT=(PT/y)+T

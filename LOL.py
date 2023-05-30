@@ -1170,12 +1170,13 @@ def main():
         "HGL": [HGLB, HGLC, HGLD, HGLE, HGLF, HGLG, HGLH, HGLI, HGLJ, HGLK, HGLL, HGLM, HGLN, HGLO, HGLP, HGLQ, HGLR, HGLS, HGLT, HGLU, HGLZ, HGLV, HGLX, HGLY, HGLW, HGLE2, HGLZ2, HGLU2 ],
 
             }
-
+      # Mostrar los valores en forma de tabla
+      st.table(data)
+      
       st.write("Considerando el punto de alimentación como el origen tabulamos y reportamos los datos:")
       st.write()
       
-      # Mostrar los valores en forma de tabla
-      st.table(data)
+
 
       
       

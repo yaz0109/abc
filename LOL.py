@@ -741,7 +741,7 @@ def main():
       # Actualizar el valor de iteracion
           iteracion += 1
             
-      st.markdown(f"<h4 style='text-align: center;'>ITERACIÓN {iteracion} </h4>", unsafe_allow_html=True)
+      st.markdown(f"<h4 style='text-align: center;'>(ITERACIÓN {iteracion}) </h4>", unsafe_allow_html=True)
       st.write()
 
       st.markdown(f"<h5 style='text-align: center;'> De nodo a nodo </h5>", unsafe_allow_html=True)

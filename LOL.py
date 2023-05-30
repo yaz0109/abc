@@ -834,8 +834,8 @@ def main():
       data = {
         "Sección": ["1", "2", "3", "4", "5", "6", "7", "8"],
         "Caudal (m^3/s)": ["{:.8f}".format(Q1_I1), "{:.8f}".format(Q2_I2), "{:.8f}".format(Q3_I3), "{:.8f}".format(Q4_I4), "{:.8f}".format(Q5_I5), "{:.8f}".format(Q6_I6), "{:.8f}".format(Q7_I7), "{:.8f}".format(Q8_I8)],
-        "hL (m)": ["hL1", "hL2", "hL3", "hL4", "hL5", "hL6", "hL7", "hL8"]
-        
+        "hL (m)": [hL1, hL2, hL3, hL4, hL5, hL6, hL7, hL8]
+
             }
     
       # Mostrar los valores en forma de tabla

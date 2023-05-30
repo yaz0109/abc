@@ -30,7 +30,7 @@ def main():
       # Solicitar al usuario el valor de QA (caudal de alimentación)
       QA = st.number_input("Ingrese el valor de QA (caudal de alimentación): ", step= 0.00001)
       st.write()
-      st.write("QA=",QA,"L/min""""""""""""""""""""""""""""""""QA=",QA/6000,"m^3/s")
+      st.write("QA=",QA,"L/min")
       QA=QA/6000
       st.write("QA=",QA,"m^3/s")
       # Solicitar al usuario el valor de HGL en metros

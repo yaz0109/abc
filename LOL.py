@@ -26,7 +26,7 @@ def main():
             "Sin embargo, no se determinaron los tamaños de las tuberías.")
       st.write()
       st.markdown("<h4 style='text-align: center;'>Datos de entrada</h4>", unsafe_allow_html=True)
-       st.write()   
+      st.write()   
       # Solicitar al usuario el valor de QA (caudal de alimentación)
       QA = st.number_input("Ingrese el valor de QA (caudal de alimentación): ", step= 0.00001)
       st.write()
@@ -92,7 +92,7 @@ def main():
 
       # Mostrar los valores asignados
       st.markdown("<h4 style='text-align: center;'>Diseño</h4>", unsafe_allow_html=True)
-       st.write()
+      st.write()
       st.write("Valores de longitud de cada sección de tubería, diametro en función al caudal de alimentación:")
       data = {
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],

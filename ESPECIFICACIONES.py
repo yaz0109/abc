@@ -35,7 +35,7 @@ def ESPECIFICACIONES ():
     st.write ("5.	Durabilidad: Las válvulas de compuerta están diseñadas para soportar altas presiones y temperaturas, lo que las hace adecuadas para aplicaciones en tuberías de alta presión y alta temperatura.") 
     st.write ("6.	Facilidad de operación: Las válvulas de compuerta son fáciles de operar y se pueden abrir y cerrar con poco esfuerzo. Además, no requieren un dispositivo de retención de posicionamiento para mantener su posición abierta o cerrada.") 
     st.write ()
-    st.write (st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/ef/7f/26/ef7f26964e8fdb8f999e4cff787ba8b2.jpg' alt='Imagen centrada' style='width: 300px; height: 200px;'></div>", unsafe_allow_html=True))
+    st.write (st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/ef/7f/26/ef7f26964e8fdb8f999e4cff787ba8b2.jpg' alt='Imagen centrada' style='width: 400px; height: 300px;'></div>", unsafe_allow_html=True))
      
     st.write (" figura 2-1 muestra dos tramos de tubería del mismo diámetro y longitud. El tramo superior contiene una válvula de globo. Si las pérdidas de presión API y AP2 se miden entre los puntos indicados, se encuentra que API es mayor que AP2.") 
 

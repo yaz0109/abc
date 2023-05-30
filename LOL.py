@@ -1240,9 +1240,16 @@ def main():
       st.markdown(f"<h5 style='text-align: center;'> Por sección de tubería </h5>", unsafe_allow_html=True)
       st.write()
 
-      st.write("Considerando el punto de alimentación como la altura = 0 m")
+      st.write("Considerando el punto de alimentación como el origen tabulamos y reportamos los datos:")
       st.write()
-      
+      data = {
+        "Nodo": ["A"],
+        "Altura (m)": ["0"],
+        "Presión (N/m^2)":[PA],
+        "Presión (psi)":[PA/6894.76],
+        "HGL": [HGL]
+
+            }
 
 
       data = {

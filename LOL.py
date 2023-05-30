@@ -1130,7 +1130,7 @@ def main():
       # CONVERSION A PSI
 
       #CALCULO DE HGL
-      
+
       HGLB=(PB/y)+B
       HGLC=(PC/y)+C
       HGLD=(PD/y)+D
@@ -1202,17 +1202,8 @@ def main():
       
       # Mostrar los valores en forma de tabla
       st.table(data)
-      data = {
-        "Sección": ["AB", "BC", "CD", "DE", "EF", "FG", "GH", "HI","IJ","JK","KL","LM","MN","NO","OP","PQ","QR","RS","ST","TU","UZ","UV","VX","XY","YW","WE","ZA","UJ"],
-        "Presión (N/m^2)": [PB, PC, PD, PE, PF, PG, PH, PI, PJ, PK, PL, PM, PN, PO, PP, PpQ, PR, PS, PT, PU, PZ, PV, PX, PY, PW, PE, PZ, PJ],
-        "Presión (psi)":[PB/6894.76, PC/6894.76, PD/6894.76, PE/6894.76, PF/6894.76, PG/6894.76, PH/6894.76, PI/6894.76, PJ/6894.76, PK/6894.76, PL/6894.76, PM/6894.76, PN/6894.76, PO/6894.76, PP/6894.76, PpQ/6894.76, PR/6894.76, PS/6894.76, PT/6894.76, PU/6894.76, PZ/6894.76, PV/6894.76, PX/6894.76, PY/6894.76, PW/6894.76, PE/6894.76, PZ/6894.76, PJ/6894.76],
-        "HGL": [HGLB, HGLC, HGLD, HGLE, HGLF, HGLG, HGLH, HGLI, HGLJ, HGLK, HGLL, HGLM, HGLN, HGLO, HGLP, HGLQ, HGLR, HGLS, HGLT, HGLU, HGLZ, HGLV, HGLX, HGLY, HGLW, HGLE2, HGLZ2, HGLU2 ],
-
-            }
-      # Mostrar los valores en forma de tabla
-      st.table(data)
-
-      st.write("Considerando el punto de alimentación como el origen tabulamos y reportamos los datos:")
+    
+      st.write("Los valores obtenidos son variados, en el sentido que es posible hacer un cálculo de presiones a partir de dos nodos o por secciones de tubo, en este caso se manejó por tubo, añadiendo en cada tubo la afección del accesorio correspondiente, tanto válvulas como codos en el sistema. ")
       st.write()
       
      

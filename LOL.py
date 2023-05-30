@@ -282,13 +282,13 @@ def main():
       # ITERACIONES
 
       st.write("Instrucciones para la búsqueda de los caudales reales:")
-      st.write("1.- Calcular los valores de los caudales en función al flujo")
-      st.write("2.- Calcular el valor respectivo de número de Raynolds, con las dimensiones, el caudal y la viscosidad del fluido")
-      st.write("3.- Obtener el valor de factor de fricción para el respectivo tubo")
-      st.write("4.- Realizar la operación que ayuda a determinar la pérdida de fricción K del tubo")
-      st.write("5.- Con el valor K, tabular el hL del tubo")
-      st.write("6.- Determinar la corrección para el caudal, renombrarlo y continuar con la siguiente iteración")
-      st.write("7.- En caso de tener un caudal en más de un circuito usar la corrección común para caudal total de este")
+      st.write("1.- Calcular los valores de los caudales en función al flujo.")
+      st.write("2.- Calcular el valor respectivo de número de Raynolds, con las dimensiones, el caudal y la viscosidad del fluido.")
+      st.write("3.- Obtener el valor de factor de fricción para el respectivo tubo.")
+      st.write("4.- Realizar la operación que ayuda a determinar la pérdida de fricción K del tubo.")
+      st.write("5.- Con el valor K, tabular el hL del tubo.")
+      st.write("6.- Determinar la corrección para el caudal, renombrarlo y continuar con la siguiente iteración.")
+      st.write("7.- En caso de tener un caudal en más de un circuito usar la corrección común para caudal total de este.")
       
       
       # Cálculo de D/e

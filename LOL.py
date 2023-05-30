@@ -284,7 +284,7 @@ def main():
         "k codo": ["30 fT"],
         "k válvula ": ["8 fT"],
 
-            }
+         }
 
         # Mostrar los valores en forma de tabla
       st.table(data)

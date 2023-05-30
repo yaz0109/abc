@@ -279,7 +279,11 @@ def main():
 
       kcodo=30
       kválvula=8
-
+      
+       data = {
+        "k codo": ["30 fT"],
+      "k válvula ": ["8 fT"],
+       }
       #HARDY CROSS
       
 
@@ -771,8 +775,11 @@ def main():
       SQ6=-1
       SQ7=-1
       SQ8=-1
-      
-
+       
+      data {
+        
+    
+      }
       # Q1
       if Q1_I1 * SQ1 > 0:
           st.write("Dirección de Q1: AE")

@@ -5,8 +5,10 @@ import pandas as pd
 
 def main():
 
-      st.write("RED DE TUBERÍAS")
+    
       st.write()
+       st.markdown("<h3 style='text-align: center;'>RED DE TUBERÍAS</h3>", unsafe_allow_html=True)
+       st.write()
       st.write("Aquí, se proporciona un croquis isométrico de la red de tuberías como ayuda visual."
             " Sin embargo, se necesitan algunas especificaciones para estas tuberías y "
             "esta es la situación de diseño que debe enfrentar  un ingeniero.")
@@ -23,11 +25,16 @@ def main():
             "plausibles y la seguridad. "
             "Sin embargo, no se determinaron los tamaños de las tuberías.")
       st.write()
-
+      st.markdown("<h4 style='text-align: center;'>Datos de entrada</h4>", unsafe_allow_html=True)
+       st.write()   
       # Solicitar al usuario el valor de QA (caudal de alimentación)
       QA = st.number_input("Ingrese el valor de QA (caudal de alimentación): ", step= 0.00001)
       st.write()
       st.write("QA=",QA,"m^3/s")
+      # Solicitar al usuario el valor de HGL en metros
+      HGL = st.number_input("Ingrese el valor de HGL de alimentación (en metros): ")
+      
+      st.write("HGL=",HGL,"m") 
                
       #DATOS
       # Declarar las variables de longitud de tuberías
@@ -48,6 +55,9 @@ def main():
       g= 9.81 # en m/s^2
       e= 4.60E-05  # en metros
       v= 1.085000E-06  # en m^2/s
+
+      st.markdown("<h4 style='text-align: center;'>Propiedades del fluido</h4>", unsafe_allow_html=True)
+      st.write()
       st.write("Aqui se muestra una tabla de las propiedades del fluido que se encuentra en la red de tuberías con una rugosidad de",e,"metros." )
       data = {
         "Fluido": ["Agua (42.5°C)"],
@@ -62,10 +72,7 @@ def main():
       st.table(data)
 
       
-      # Solicitar al usuario el valor de HGL en metros
-      HGL = st.number_input("Ingrese el valor de HGL de alimentación (en metros): ")
-      
-      st.write("HGL=",HGL,"m")     
+          
        # Calcular las variables establecidas
       Q6 = QA * 0.35
       Q7 = QA * 0.5
@@ -84,6 +91,8 @@ def main():
       st.write()
 
       # Mostrar los valores asignados
+      st.markdown("<h4 style='text-align: center;'>Diseño</h4>", unsafe_allow_html=True)
+       st.write()
       st.write("Valores de longitud de cada sección de tubería, diametro en función al caudal de alimentación:")
       data = {
         "Tubería": ["1", "2", "3", "4", "5", "6", "7", "8"],

@@ -287,7 +287,7 @@ def main():
          }
 
         # Mostrar los valores en forma de tabla
-        st.table(data)
+      st.table(data)
       #HARDY CROSS
       
 

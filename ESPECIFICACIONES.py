@@ -35,10 +35,16 @@ def ESPECIFICACIONES ():
     st.write ("5.	Durabilidad: Las válvulas de compuerta están diseñadas para soportar altas presiones y temperaturas, lo que las hace adecuadas para aplicaciones en tuberías de alta presión y alta temperatura.") 
     st.write ("6.	Facilidad de operación: Las válvulas de compuerta son fáciles de operar y se pueden abrir y cerrar con poco esfuerzo. Además, no requieren un dispositivo de retención de posicionamiento para mantener su posición abierta o cerrada.") 
     st.write ()
-    st.write (st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/ef/7f/26/ef7f26964e8fdb8f999e4cff787ba8b2.jpg' alt='Imagen centrada' style='width: 400px; height: 300px;'></div>", unsafe_allow_html=True))
-     
-    st.write (" figura 2-1 muestra dos tramos de tubería del mismo diámetro y longitud. El tramo superior contiene una válvula de globo. Si las pérdidas de presión API y AP2 se miden entre los puntos indicados, se encuentra que API es mayor que AP2.") 
+    st.markdown(f"<h3    style='text-align: center;'> Ubicaciones de los accesorios </h3>", unsafe_allow_html=True)
+    st.write ("La ubicación del accesorio, en este caso las válvulas de compuerta tendrán la función de bloquear el flujo parcial o por completo del fluido, en su defecto modificando la presión para un propósito definido, para ello es necesario pues, que sean los más eficientes posibles colocando una en cada línea independiente a las otra. Las distancias de esté sobre la sección del tubo correspondiente no influirá en la eficiencia del sistema (a menos que hagamos cambiar el tamaño del tubo.")
+    st.write ()
 
+    st.write (" figura 2-1 muestra dos tramos de tubería del mismo diámetro y longitud. El tramo superior contiene una válvula de globo. Si las pérdidas de presión API y AP2 se miden entre los puntos indicados, se encuentra que API es mayor que AP2.") 
+    st.write (st.markdown("<div style='display: flex; justify-content: center;'><img src='https://i.pinimg.com/564x/ef/7f/26/ef7f26964e8fdb8f999e4cff787ba8b2.jpg' alt='Imagen centrada' style='width: 400px; height: 300px;'></div>", unsafe_allow_html=True))
+    
+    
+     
+    
 
 
 if __name__ == '__main__':

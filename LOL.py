@@ -281,7 +281,7 @@ def main():
 
       # ITERACIONES
 
-      st.write("Instrucciones para la búsqueda de los caudales reales")
+      st.write("Instrucciones para la búsqueda de los caudales reales:")
       st.write("1.- Calcular los valores de los caudales en función al flujo")
       st.write("2.- Calcular el valor respectivo de número de Raynolds, con las dimensiones, el caudal y la viscosidad del fluido")
       st.write("3.- Obtener el valor de factor de fricción para el respectivo tubo")

@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 def FUENTES():
-    st.markdown(f"<h2 style='text-align: center;'> FUENTES BIBLIOGRAFICAS </h2>", unsafe_allow_html=True)
+    st.markdown(f"<h2 style='text-align: center;'> FUENTES BIBLIOGRÁFICAS </h2>", unsafe_allow_html=True)
     st.write ()
     st.write ("1.- MOTT, R. L. (2006). MECANICA DE FLUIDOS (6a. ed., 1a. reimp.). MEXICO: PEARSON EDUCACION.")
     st.write ()

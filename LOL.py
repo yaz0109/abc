@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-def main():
+def LOL():
 
     
       st.write()
@@ -1215,4 +1215,4 @@ def main():
       
      
 if __name__ == "__main__":
-    main()
+    LOL()

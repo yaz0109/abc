@@ -9,6 +9,8 @@ def main():
       st.write()
       st.markdown("<h3 style='text-align: center;'>RED DE TUBERÍAS</h3>", unsafe_allow_html=True)
       st.write()
+      image_red = "https://i.pinimg.com/564x/55/ab/fc/55abfc7f7bd7c1140aa9a87a40e9dd47.jpg"
+      st.image(image_red, use_column_width=True, caption=".")
       st.write("Aquí, se proporciona un croquis isométrico de la red de tuberías como ayuda visual."
             " Sin embargo, se necesitan algunas especificaciones para estas tuberías y "
             "esta es la situación de diseño que debe enfrentar  un ingeniero.")
@@ -67,7 +69,7 @@ def main():
       "Densidad promedio (kg/m^3)": ["991"],
       "Gravedad (m/s^2)": ["9.81"],
       "Peso Específico (N/m^3)": [y],
-      "Viscosidad (m^2/s)": [v],
+      "Viscosidad (m^2/s)": [1.085000E-06],
 
             }
     
@@ -106,7 +108,7 @@ def main():
     
       # Mostrar los valores en forma de tabla
       st.table(data)
-      st.write("Los valores que de caudales supuestos que se reportan luego de hacer el cálculo, son signo negativo, se deben a que fueron modificados respecto al sentido de flujo que se predestino en el diagrama.")  
+      st.write("Los valores de caudales supuestos que se reportan luego de hacer el cálculo, con signo negativo, fueron modificados respecto al sentido de flujo que se predestino en el diagrama.")  
  
 
       def asignar_diametro(*caudales):
